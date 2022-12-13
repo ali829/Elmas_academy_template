@@ -87,3 +87,120 @@ a{
 .desknavbar .socialmedia-icons i {
     display: flex; align-items: center;
 }
+.checkbox{
+    display: none;
+}
+
+.mobilenav{
+    display: none;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 865px) {
+    .desknavbar{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .desknavbar .desknav-items , .desknavbar .socialmedia-icons{
+        display: none;
+    }
+    .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 40px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+    .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+      }
+      .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+       input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+       input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+       input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      input[type="checkbox"]:checked ~ .mobilenav {
+        transform: translateX(0);
+      }
+      .mobilenav{
+        display: block;
+        background-color: #ffffff;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .mobile-items{
+        margin-top: 100px;
+        list-style: none;
+        font-size: 30px;
+        font-family: cairo;
+      }
+      .mobile-items a {
+        width: 100%;
+        color: var(--dark-blue-100);
+      }
+      .mobile-items li{
+        padding: 5px 0;
+      }
+      .mobile-socialmedia-icons{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      .mobile-socialmedia-icons li {
+        background-color: var(--dark-blue-100);
+        color: #ffffff;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin: 0 5px;
+        font-family: cairo;
+        transition: all .1s ease-out;
+        box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+      }
+
+}
