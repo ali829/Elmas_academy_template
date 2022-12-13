@@ -104,7 +104,7 @@ a{
 /* =====================top hero======================= */
 .top-hearo-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     direction: rtl;
 }
@@ -203,6 +203,40 @@ a{
     margin: 4px auto;
     border-radius: 2px;
 }
+
+
+
+/* =====================banener text======================= */
+.banner-text-container{
+    margin: 40px 0;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(250.17deg, #007DC0 36.75%, #6BB3D9 113.6%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+.banner-text-container .banner-text-title{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    width: max-content;
+    margin: 0 15%;
+    color: var(--yellow-);
+}
+.banner-text-container .banner-text-desc{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    width: 400px;
+    margin: 0 15%;
+    color: #ffffff;
+}
+
 
 /* responsive design */
 @media screen and (max-width: 865px) {
@@ -343,7 +377,15 @@ a{
         justify-self: center;
     }
 
-
+    .banner-text-container .banner-text-title {
+        font-size: 20px;
+        margin: 0 5%;
+    }
+    .banner-text-container .banner-text-desc {
+        font-size: 16px;
+        width: 300px;
+        margin: 0 5%;
+    }
 }
 
 
