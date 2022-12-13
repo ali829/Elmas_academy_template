@@ -12,6 +12,11 @@
     --dark-blue-20 : rgba(2,13,43,0.2);
     --dark-blue-10 : rgba(2,13,43,0.1);
     --dark-blue-5 : rgba(2,13,43,0.05);
+    --yellow-: #F6C000 ;
+    --orange-: #FF9F55 ;
+
+    /* transition */
+    --global-transition :  0.4s ease-in-out;
 }
 
 @font-face {
@@ -94,6 +99,87 @@ a{
 .mobilenav{
     display: none;
 }
+
+
+/* =====================top hero======================= */
+.top-hearo-container{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    direction: rtl;
+}
+
+.hero-text-container{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.hero-text{
+    width: 40%;
+    height: fit-content;
+    margin-left: 80px;
+}
+.hero-text-container h1{
+    font-family: cairo;
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--blue-100);
+    margin: 0;
+    word-break: break-all;
+    text-align: left;
+}
+.hero-text-container h3{
+    display: block;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190.9%;
+    color: #F6C000;
+    margin-top:-18% ;
+    text-align: left;
+    letter-spacing: 2.5rem;
+}
+.hero-text-container p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    color: var(--dark-blue-100);
+}
+
+.hero-text-container button{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    appearance: none;
+    border: 0;
+    box-shadow: 0px 10px 34px rgba(69, 190, 255, 0.25);
+    border-radius: 80px;
+    background-color: var(--dark-blue-80);
+    color: #ffffff;
+    padding: 10px 60px;
+    box-shadow: 0 10px 15px -3px var(--dark-blue-20), 0 4px 6px -4px var(--dark-blue-20);
+    cursor: pointer;
+    transition: var(--global-transition);
+}
+.hero-text-container button:hover{
+    background-color: var(--dark-blue-50);
+    box-shadow: none;
+}
+
+.hero-canva{
+    width: 50%;
+}
+.hero-canva img{
+    width: 500px;
+    height: 500px;
+}
+
+
 
 
 /* responsive design */
