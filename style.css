@@ -238,6 +238,69 @@ a{
 }
 
 
+
+
+
+
+
+/* =====================banener text======================= */
+.courses-category-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    margin: 40px 0;
+}
+.courses-category-container .courses-category-content{
+    width: 70%;
+}
+.courses-category-container .courses-category-content .courses-category-title{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    color: var(--dark-blue-80);
+    width: max-content;
+}
+.courses-category-container .courses-category-content .courses-category-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 80%;
+    background-color: var(--yellow-);
+    border-radius: 2px;
+}
+.courses-category-container .courses-category-content .courses-category-slider{
+    display: flex;
+    justify-content: center;
+}
+.courses-category-container .courses-category-content .courses-category-slider-item{
+    width: 50%;
+    height: 330px;
+    background-color: var(--blue-5);
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    overflow: hidden;
+    transition: var(--global-transition);
+    cursor: pointer;
+}
+.courses-category-container .courses-category-content .courses-category-slider-item:hover{
+    transform: scale(1.03);
+}
+.courses-category-container .courses-category-content .courses-category-slider-item img{
+    object-fit: cover;
+}
+.courses-category-container .courses-category-content .courses-category-slider-item p{
+    text-align: center;
+    font-family: 'Cairo';
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+}
 /* responsive design */
 @media screen and (max-width: 865px) {
     .desknavbar{
