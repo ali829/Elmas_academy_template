@@ -14,8 +14,76 @@
     --dark-blue-5 : rgba(2,13,43,0.05);
 }
 
-
+@font-face {
+    font-family: "Cairo";
+    src: url(/assets/font/Cairo-VariableFont_slnt\,wght.ttf);
+}
 
 body{
     background-color: var(--blue-5);
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* desktop navbar */
+.desknavbar{
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: sticky;
+}
+
+.elmas-logo{
+    width: 120px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px
+}
+
+.desknavbar .desknav-items , .desknavbar .socialmedia-icons{
+    list-style: none;
+    display: flex;
+}
+.desknav-items li {
+    margin: 0 10px;
+    color: var(--blue-100);
+    font-family: cairo;
+    transition: all .1s ease-out;
+}
+.desknav-items li:hover{
+    color: var(--blue-50);
+}
+
+.desknav-items a{
+    text-decoration: none;
+}
+
+
+.desknavbar .socialmedia-icons li{
+    background-color: var(--blue-100);
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0 5px;
+    font-family: cairo;
+    transition: all .1s ease-out;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+}
+.desknavbar .socialmedia-icons li:hover{
+    background-color: var(--blue-50);
+    box-shadow: none;
+}
+
+.desknavbar .socialmedia-icons i {
+    display: flex; align-items: center;
 }
