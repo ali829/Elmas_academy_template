@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // slick caroussel
+  // courses caroussel
   $('.courses-category-slider').slick({
     centerMode: true,
     centerPadding: '50px',
@@ -10,7 +10,7 @@ $(document).ready(function() {
         return '<span class="slider-dot"></span>';
     },
     rtl:  true,
-    // autoplay: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,
@@ -31,6 +31,37 @@ $(document).ready(function() {
       }
     ]
   });
+
+
+  // reviews caroussel
+  $('.student-reviews-slider').slick({
+    centerMode: true,
+    centerPadding: '50px',
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    rtl:  true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
 });
 
 

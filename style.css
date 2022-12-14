@@ -252,7 +252,7 @@ a{
 
 
 /* =====================courses category======================= */
-.courses-category-container, .courses-container{
+.courses-category-container, .courses-container , .student-reviews-container{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -262,10 +262,10 @@ a{
 }
 
 
-.courses-category-container .courses-category-content , .courses-container .courses-content{
+.courses-category-container .courses-category-content , .courses-container .courses-content , .student-reviews-container .student-reviews-content{
     width: 70%;
 }
-.courses-category-container .courses-category-content .courses-category-title , .courses-container .courses-content .courses-title{
+.courses-category-container .courses-category-content .courses-category-title , .courses-container .courses-content .courses-title , .student-reviews-container .student-reviews-content .student-reviews-title{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
@@ -274,7 +274,7 @@ a{
     color: var(--dark-blue-80);
     width: max-content;
 }
-.courses-category-container .courses-category-content .courses-category-title::before , .courses-container .courses-content .courses-title::before{
+.courses-category-container .courses-category-content .courses-category-title::before , .courses-container .courses-content .courses-title::before , .student-reviews-container .student-reviews-content .student-reviews-title::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -580,6 +580,74 @@ button.course-cta-more-details:hover{
     margin: 0;
 }
 
+/* =====================student reviews======================= */
+.student-reviews-container .student-reviews-content .student-reviews-slider{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item{
+    width: 50%;
+    height: 311px;
+    background-color: var(--blue-50);
+    border-radius: 30px;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    cursor: pointer;
+    position: relative;
+    padding-top: 35px;
+    margin: 2% 5px;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-photo{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    top: -15%;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-photo img{
+    object-fit: cover;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-name{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-stars {
+    display: flex;
+    justify-content: center;
+    font-size: 30px; 
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-stars i {
+    margin: 0 4px;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-desc{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .overlay-star{
+    position: absolute;
+    font-size: 100px;
+    top: 10px;
+    left: 10px;
+    transform: rotate(40deg);
+    animation: starSpin 4s linear infinite;
+}
 
 
 /* responsive design */
@@ -782,6 +850,15 @@ button.course-cta-more-details:hover{
     .why-elmas-container .why-elmas-content .why-elmas-canva img{
         width: 90%;
     }
+
+
+/* =====================student reviews======================= */
+.courses-category-container .courses-category-content, .courses-container .courses-content, .student-reviews-container .student-reviews-content{
+    width: 100%;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider{
+    width: 100%;
+}
 }
 
 
@@ -817,3 +894,11 @@ button.course-cta-more-details:hover{
     50%  {transform: translate(50%,-50%) scale(1.1)}
     100% {transform: translate(50%,-50%) scale(1.05)}
   }
+  @keyframes starSpin { 
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+ }
