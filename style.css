@@ -488,7 +488,7 @@ button.course-cta-more-details:hover{
     background: linear-gradient(180deg, #FF9F55 0%, #E6583B 100%);
     display: flex;
     justify-content: center;
-    margin: 40px 0;
+    margin-bottom: 300px;
 }
 .video-section-container .video-section-thumbnail{
     width: 50%;
@@ -522,6 +522,66 @@ button.course-cta-more-details:hover{
     font-size: 30px;
     animation: playPulse 2s infinite;
 }
+
+
+/* =====================why elmas======================= */
+.why-elmas-container{
+    width: 100%;
+    height: fit-content;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.why-elmas-container .why-elmas-content{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+.why-elmas-container .why-elmas-content .why-elmas-info{
+    width: 50%;
+}
+.why-elmas-container .why-elmas-content .why-elmas-info h3{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    color: var(--yellow-);
+    margin: 0;
+}
+.why-elmas-container .why-elmas-content .why-elmas-info p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-blue-100);
+    margin: 0;
+}
+.why-elmas-container .why-elmas-content .elmas-numbers-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.why-elmas-container .why-elmas-content .elmas-numbers-container .elmas-numbers-item h6{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--blue-50);
+    margin: 0;
+}
+.why-elmas-container .why-elmas-content .elmas-numbers-container .elmas-numbers-item p{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--dark-blue-50);
+    margin: 0;
+}
+
+
+
 /* responsive design */
 @media screen and (max-width: 865px) {
     .desknavbar{
@@ -692,14 +752,35 @@ button.course-cta-more-details:hover{
 
 
 /* =====================video section======================= */
-    .video-section-container .video-section-thumbnail {
+.video-section-container .video-section-thumbnail {
+    width: 100%;
+    margin: 0 15px;
+    height: 220px;
+    transform: translateY(50%);
+}
+.video-section-container {
+    height: 300px;
+}
+
+
+
+
+
+/* =====================video section======================= */
+    .why-elmas-container .why-elmas-content{
         width: 100%;
-        margin: 0 15px;
-        height: 220px;
-        transform: translateY(50%);
+        flex-direction: column;
+        flex-direction: column;
     }
-    .video-section-container {
-        height: 300px;
+    .why-elmas-container .why-elmas-content .why-elmas-info{
+        width: fit-content;
+        margin:30px;
+    }
+    .why-elmas-container .why-elmas-content .elmas-numbers-container{
+        width: 100%;
+    }
+    .why-elmas-container .why-elmas-content .why-elmas-canva img{
+        width: 90%;
     }
 }
 
