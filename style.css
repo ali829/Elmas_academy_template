@@ -251,8 +251,8 @@ a{
 
 
 
-/* =====================banener text======================= */
-.courses-category-container{
+/* =====================courses category======================= */
+.courses-category-container, .courses-container{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -260,10 +260,12 @@ a{
     direction: rtl;
     margin: 40px 0;
 }
-.courses-category-container .courses-category-content{
+
+
+.courses-category-container .courses-category-content , .courses-container .courses-content{
     width: 70%;
 }
-.courses-category-container .courses-category-content .courses-category-title{
+.courses-category-container .courses-category-content .courses-category-title , .courses-container .courses-content .courses-title{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
@@ -272,7 +274,7 @@ a{
     color: var(--dark-blue-80);
     width: max-content;
 }
-.courses-category-container .courses-category-content .courses-category-title::before{
+.courses-category-container .courses-category-content .courses-category-title::before , .courses-container .courses-content .courses-title::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -323,7 +325,160 @@ a{
 }
 
 
+/* =====================courses======================= */
+.courses-container .courses-content .courses
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.courses-container .courses-content .courses-filter .courses-filter-item{
+    appearance: none;
+    border: 0;
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #dfe6e9;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: var(--global-transition);
+}
+.courses-container .courses-content .courses-filter .courses-filter-item:hover{
+    background-color: #ffffff;
+    color: var(--orange-);
+    box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
+}
+.courses-container .courses-content .courses-filter .courses-filter-item.active-filter{
+    background-color: #ffffff;
+    color: var(--orange-);
+    box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
+}
+.courses-container .courses-content .courses .course-item
+{
+    width: 25%;
+    height: 521px;
+    margin: 40px 1px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0;
+    position: relative;
+    box-shadow: 0 10px 15px -3px var(--blue-50), 0 4px 6px -4px var(--blue-50);
+    transition: var(--global-transition);
+}
+.courses-container .courses-content .courses .course-item:hover{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+.courses-container .courses-content .courses .course-item img{
+    object-fit: cover;
+}
+.courses-container .courses-content .courses .course-item::before{
+    content: 'جديد';
+    position: absolute;
+    top: 2%;
+    right: -8%;
+    background-color: #FF3A3A;
+    color: #fff;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0px 40px;
+    transform: rotate(45deg);
+}
 
+.courses-container .courses-content .courses .course-item .course-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+    padding: 0 5px;
+}
+.courses-container .courses-content .courses .course-item .course-details .course-details-title{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 160px;
+    height: 2.2em;
+    white-space: nowrap;
+}
+.courses-container .courses-content .courses .course-item .course-details .course-details-price{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+.courses-container .courses-content .courses .course-item .course-details .course-details-price span{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-size: 15px;
+}
+.courses-container .courses-content .courses .course-item .course-cta {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+button.course-cta-subsription, .course-cta-more-details {
+    appearance: none;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    width: 49%;
+    padding: 5px 0;;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--global-transition);
+    box-shadow: 0 10px 15px -3px var(--blue-5), 0 4px 6px -4px var(--blue-5);
+}
+button.course-cta-subsription {
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: var(--dark-blue-80);
+}
+button.course-cta-subsription:hover , .all-courses-button button:hover{
+    background-color: var(--dark-blue-50);
+}
+button.course-cta-more-details {
+    background-color: #ffffff;
+    border: 1px var(--blue-80) solid;
+    color: var(--blue-80);
+}
+button.course-cta-more-details:hover{
+    background-color: var(--blue-80);
+    color: #fff;
+}
+.all-courses-button{
+    display: flex;
+    justify-content: center;
+}
+.all-courses-button button{
+    appearance: none;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 60px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: var(--global-transition);
+    box-shadow: 0 10px 15px -3px var(--blue-5), 0 4px 6px -4px var(--blue-5);
+    border: none;
+    background-color: var(--dark-blue-80);
+    color: #dfe6e9;
+    
+}
 
 /* responsive design */
 @media screen and (max-width: 865px) {
@@ -472,6 +627,24 @@ a{
         font-size: 16px;
         width: 300px;
         margin: 0 5%;
+    }
+
+
+
+
+    .courses-container .courses-content .courses .course-item{
+        width: 100%;
+    }
+    .courses{
+        flex-direction: column;
+    }
+    .courses-container .courses-content .courses-filter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .courses-container .courses-content .courses-filter .courses-filter-item{
+        padding: 5px 10px;
+        margin: 4px 2px;
     }
 }
 
