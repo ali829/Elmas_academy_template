@@ -32,3 +32,16 @@ $(document).ready(function() {
     ]
   });
 });
+
+
+
+
+// on scroll make nave bar fixed
+var my_nav = document.querySelector('.desknavbar')
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400) {
+    my_nav.classList.add('scrolled')
+  } else {
+    my_nav.classList.remove('scrolled')
+  }
+})

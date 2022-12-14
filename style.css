@@ -39,7 +39,15 @@ a{
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    position: sticky;
+    width: 100%;
+    /* position: fixed; */
+    transition: var(--global-transition);
+    z-index: 1111111;
+}
+.desknavbar.scrolled{
+    position: fixed;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    background-color: #ffffff;
 }
 
 .elmas-logo{
