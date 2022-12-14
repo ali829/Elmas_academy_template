@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- flat icon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <!-- swipper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- slick -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <title>Elmas academy - home</title>
 </head>
 <body>
@@ -125,16 +127,24 @@
 
 <!-- courses category  -->
 <div class="courses-category-container">
-    <div class="courses-category-content swiper mySwiper">
+    <div class="courses-category-content swiper ">
         <p class="courses-category-title">الفئات التعليمية</p>
-        <div class="courses-category-slider swiper-wrapper">
-            <div class="courses-category-slider-item swiper-slide">
-                <img src="/assets/photos/Picture1_8 1.png" width="100%" height="80%" alt="">
+        <div class="courses-category-slider">
+            <div class="courses-category-slider-item">
+                <img src="assets/photos/formation category/Programmer-Illustration-Dark 1.jpg" width="100%" height="80%" alt="">
                 <p>البرمجة والتطوير</p>
             </div>
-            <div class="courses-category-slider-item swiper-slide">
-                <img src="/assets/photos/Picture1_8 1.png" width="100%" height="80%" alt="">
-                <p>البرمجة والتطوير</p>
+            <div class="courses-category-slider-item">
+                <img src="/assets/photos/formation category/Best-Digital-Marketing-Service-Providers 1.jpg" width="100%" height="80%" alt="">
+                <p>التسويق الالكتروني </p>
+            </div>
+            <div class="courses-category-slider-item">
+                <img src="/assets/photos/formation category/header-1200-49 1.jpg" width="100%" height="80%" alt="">
+                <p>التصوير والمونتاج</p>
+            </div>
+            <div class="courses-category-slider-item">
+                <img src="/assets/photos/formation category/Picture1_8 1.jpg" width="100%" height="80%" alt="">
+                <p>الفن والتصميم</p>
             </div>
         </div>
     </div>
@@ -144,8 +154,11 @@
 
 
 
-<!-- swipper js -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- slick js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="slick-1.8.1/slick/slick.min.js"></script>
+<!-- js -->
 <script src="/script.js"></script>
 </body>
 </html>

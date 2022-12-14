@@ -279,6 +279,7 @@ a{
     justify-content: center;
 }
 .courses-category-container .courses-category-content .courses-category-slider-item{
+    margin: 30px 15px;
     width: 50%;
     height: 330px;
     background-color: var(--blue-5);
@@ -301,6 +302,21 @@ a{
     font-size: 24px;
     margin: 0;
 }
+.courses-category-container .courses-category-content .courses-category-slider .slider-dot{
+    width: 15px;
+    height: 15px;
+    border:2px var(--yellow-) solid;
+    display: inline-block;
+    border-radius: 50%;
+}
+.slick-dots li.slick-active .slider-dot{
+    background-color: var(--yellow-);
+    border: 0;
+}
+
+
+
+
 /* responsive design */
 @media screen and (max-width: 865px) {
     .desknavbar{
