@@ -649,6 +649,45 @@ button.course-cta-more-details:hover{
     animation: starSpin 4s linear infinite;
 }
 
+/* =====================contact banner======================= */
+.contact-banner-container{
+    direction: rtl;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    background: linear-gradient(180deg, #FF9F55 -32.17%, #E6583B 154.33%);
+}
+.contact-banner-container .contact-item{
+    width: 25%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-banner-container .contact-item i{
+    color: #fff;
+    font-size: 50px;
+    margin: 0 10px;
+}
+.contact-banner-container .contact-item p{
+    font-family: 'Cairo';
+    font-style: normal;
+    margin: 0;
+    color: #ffffff;
+}
+.contact-banner-container .contact-item p:nth-child(1){
+    direction: ltr;
+    font-weight: 600;
+    font-size: 25px;
+}
+.contact-banner-container .contact-item p:nth-child(2){
+    font-weight: 500;
+    font-size: 20px;
+}
 
 /* responsive design */
 @media screen and (max-width: 865px) {
@@ -858,6 +897,17 @@ button.course-cta-more-details:hover{
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider{
     width: 100%;
+}
+
+
+
+/* =====================student reviews======================= */
+.contact-banner-container{
+    flex-direction: column;
+}
+.contact-banner-container .contact-item{
+    width: 100%;
+    margin: 20px;
 }
 }
 
