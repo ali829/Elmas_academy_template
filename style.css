@@ -37,17 +37,23 @@ a{
 .desknavbar{
     direction: rtl;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center;
+    padding: 20px 0;
     width: 100%;
     /* position: fixed; */
     transition: var(--global-transition);
     z-index: 1111111;
 }
 .desknavbar.scrolled{
+    top: 0;
     position: fixed;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
     background-color: #ffffff;
+}
+.desknavbar .navbar-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .elmas-logo{
@@ -56,7 +62,6 @@ a{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px
 }
 
 .desknavbar .desknav-items , .desknavbar .socialmedia-icons , .join-us-container .socialmedia-icons{
@@ -130,6 +135,9 @@ a{
     width: 40%;
     height: fit-content;
     margin-left: 80px;
+}
+.hero-text .cls-1.logo-a{
+    animation: logoAnime 2s infinite;
 }
 .hero-text-container h1{
     font-family: cairo;
@@ -222,7 +230,7 @@ a{
     margin: 40px 0;
     width: 100%;
     height: fit-content;
-    background: linear-gradient(250.17deg, #007DC0 36.75%, #6BB3D9 113.6%);
+    background: var(--blue-80);
     padding-top: 40px;
     padding-bottom: 40px;
     direction: rtl;
@@ -787,7 +795,7 @@ footer .footer-section-container .footer-newsletter-form-container form input[ty
     font-style: normal;
 }
 footer .footer-section-container .footer-newsletter-form-container form input[type="email"]:focus-visible{
-   outline: none;
+    outline: none;
 }
 footer .footer-section-container .footer-newsletter-form-container form input[type="submit"]{
     appearance: none;
@@ -814,6 +822,43 @@ footer .copywrite-footer{
     font-size: 18px;
     text-align: center;
     border-top: 1px #ffffff solid;
+}
+
+
+
+/* =====================hero single page======================= */
+.hero-top-container{
+    width: 100%;
+    height: 603px;
+    font-family: 'Cairo';
+    font-style: normal;
+    color:var(--dark-blue-100);
+    text-align: center;
+    position: relative;
+}
+.hero-top-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url('assets/photos/hero_picture/Picture1_8\ 2.png');
+    z-index: -1;
+}
+.hero-top-container h3{
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+    padding-top: 170px;
+}
+.hero-top-container p{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
 }
 
 /* responsive design */
@@ -875,25 +920,31 @@ footer .copywrite-footer{
         transform: rotate(-45deg);
       }
       input[type="checkbox"]:checked ~ .mobilenav {
-        transform: translateX(0);
+        /* width: max-content; */
+        transform: translate(0%);
+
       }
       .mobilenav{
         display: block;
         background-color: #ffffff;
-        width: 100%;
+        width: 50%;
+        overflow: hidden;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: 0;
-        transform: translateX(-100%);
+        left: 0;
+        padding: 0 10px;
+        transform: translate(-100%);
         transition: transform 0.4s ease-in-out;
+        z-index: 1111;
       }
 
       .mobile-items{
         margin-top: 100px;
         list-style: none;
-        font-size: 30px;
+        font-size: 20px;
         font-family: cairo;
+        padding: 0;
       }
       .mobile-items a {
         width: 100%;
@@ -905,7 +956,7 @@ footer .copywrite-footer{
       .mobile-socialmedia-icons{
         list-style: none;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         padding: 0;
       }
       .mobile-socialmedia-icons li {
@@ -917,7 +968,7 @@ footer .copywrite-footer{
         justify-content: center;
         align-items: center;
         border-radius: 100%;
-        margin: 0 5px;
+        margin: 2px 5px;
         font-family: cairo;
         transition: all .1s ease-out;
         box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
@@ -942,10 +993,9 @@ footer .copywrite-footer{
         margin-left: 0;
         padding: 10px;
     }
-    .hero-text-container h3{
-        margin-top: -70px;
-    }
-    .hero-text-container h3, .hero-text-container h1 , .hero-text-container p{
+    
+
+    .hero-text-container p{
         text-align: center;
     }
     .hero-text-container button{
@@ -1053,6 +1103,21 @@ footer .footer-section-container .footer-newsletter-form-container form  {
     width: 80%;
     float: right;
 }
+/* =====================hero single page======================= */
+    .hero-top-container{
+        height: 150px;
+    }
+    .hero-top-container::before{
+        background-size: contain;
+        background-repeat: no-repeat ;
+    }
+    .hero-top-container h3{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .hero-top-container p{
+        font-size: 15px;
+    }
 }
 
 
@@ -1095,4 +1160,9 @@ footer .footer-section-container .footer-newsletter-form-container form  {
       to {
         transform: rotate(359deg);
       }
+ }
+ @keyframes logoAnime{
+    0%   {transform:  scale(1.01)}
+    50%  {transform:  scale(1)}
+    100% {transform:  scale(1.01)}
  }
