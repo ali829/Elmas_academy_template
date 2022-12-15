@@ -76,3 +76,10 @@ window.addEventListener('scroll', () => {
     my_nav.classList.remove('scrolled')
   }
 })
+
+// footer copywrite
+let actualYear = new Date().getFullYear();
+let siteName = window.location.origin;
+
+document.querySelector('.copywrite-footer-actual-year').textContent = actualYear;
+document.querySelector('.copywrite-footer-sitename').textContent = siteName;
