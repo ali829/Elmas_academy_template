@@ -25,7 +25,7 @@
 }
 
 body{
-    background-color: var(--blue-5);
+    background-color: var(--blue-10);
     margin: 0;
 }
 a{
@@ -59,15 +59,18 @@ a{
     padding-inline-start: 40px
 }
 
-.desknavbar .desknav-items , .desknavbar .socialmedia-icons{
+.desknavbar .desknav-items , .desknavbar .socialmedia-icons , .join-us-container .socialmedia-icons{
     list-style: none;
     display: flex;
 }
 .desknav-items li {
     margin: 0 10px;
-    color: var(--blue-100);
+    color: var(--dark-blue-80);
     font-family: cairo;
     transition: all .1s ease-out;
+}
+.desknav-items li i{
+    color: var(--blue-80);
 }
 .desknav-items li:hover{
     color: var(--blue-50);
@@ -78,8 +81,8 @@ a{
 }
 
 
-.desknavbar .socialmedia-icons li{
-    background-color: var(--blue-100);
+.desknavbar .socialmedia-icons li , .join-us-container .socialmedia-icons li{
+    background-color: var(--blue-80);
     color: #ffffff;
     height: 35px;
     width: 35px;
@@ -92,12 +95,12 @@ a{
     transition: all .1s ease-out;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
 }
-.desknavbar .socialmedia-icons li:hover{
+.desknavbar .socialmedia-icons li:hover ,  .join-us-container .socialmedia-icons li:hover{
     background-color: var(--blue-50);
     box-shadow: none;
 }
 
-.desknavbar .socialmedia-icons i {
+.desknavbar .socialmedia-icons i , .join-us-container .socialmedia-icons i{
     display: flex; align-items: center;
 }
 .checkbox{
@@ -687,6 +690,37 @@ button.course-cta-more-details:hover{
 .contact-banner-container .contact-item p:nth-child(2){
     font-weight: 500;
     font-size: 20px;
+}
+
+
+
+
+/* =====================join us======================= */
+.join-us-container{
+    width: 100%;
+    margin: 80px 0;
+    direction: rtl;
+    text-align: center;
+}
+.join-us-container .join-us-title , .join-us-container .join-us-desc{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+.join-us-container .join-us-title{
+    font-size: 30px;
+    color: var(--blue-50);
+}
+.join-us-container .join-us-desc{
+    font-size: 16px;
+    color: var(--dark-blue-80);
+}
+.join-us-container .socialmedia-icons{
+    width: 100%;
+    justify-content: center;
+    padding: 0;
 }
 
 /* responsive design */
