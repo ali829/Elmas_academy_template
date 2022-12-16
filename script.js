@@ -83,3 +83,19 @@ let siteName = window.location.origin;
 
 document.querySelector('.copywrite-footer-actual-year').textContent = actualYear;
 document.querySelector('.copywrite-footer-sitename').textContent = siteName;
+
+// home page video popup
+const videoPopup = document.querySelector('.video-popup-container')
+const videoContainer = document.querySelector('#elmas-video')
+const playButton = document.querySelector('.video-section-play-icon');
+
+
+playButton.addEventListener('click', () => {
+  videoPopup.classList.add('show')
+})
+
+videoPopup.addEventListener('mouseup', (e) => {
+  if(e.target == videoPopup){
+    videoPopup.classList.remove('show')
+  }
+})
