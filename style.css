@@ -12,10 +12,11 @@
     --dark-blue-20 : rgba(2,13,43,0.2);
     --dark-blue-10 : rgba(2,13,43,0.1);
     --dark-blue-5 : rgba(2,13,43,0.05);
-    --yellow-: #F6C000 ;
     --orange-: #FF9F55 ;
+    --yellow-: #FFCF66 ;
     --blue-: #33CCFF;
     --dark-blue- : #020D2B;
+    --white-: #dfe6e9;
 
     /* transition */
     --global-transition :  0.4s ease-in-out;
@@ -50,7 +51,7 @@ a{
 .desknavbar.scrolled{
     top: 0;
     position: fixed;
-    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    box-shadow: 0 10px 15px -3px rgba(2, 13, 43, 0.5), 0 4px 6px -4px rgba(2, 13, 43, 0.8);
 }
 .desknavbar .navbar-container{
     width: 70%;
@@ -72,7 +73,7 @@ a{
 }
 .desknav-items li {
     margin: 0 10px;
-    color: #ffffff;
+    color: var(--white-);
     font-family: cairo;
     transition: all .1s ease-out;
 }
@@ -80,7 +81,7 @@ a{
     color: var(--blue-);
 }
 .desknav-items li:hover{
-    color: var(--blue-);
+    color: var(--yellow-);
 }
 
 .desknav-items a{
@@ -89,7 +90,7 @@ a{
 
 
 .desknavbar .socialmedia-icons li , .join-us-container .socialmedia-icons li{
-    background-color: #ffffff;
+    background-color: var(--white-);
     color: var(--dark-blue-);
     height: 35px;
     width: 35px;
@@ -103,8 +104,9 @@ a{
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
 }
 .desknavbar .socialmedia-icons li:hover ,  .join-us-container .socialmedia-icons li:hover{
-    background-color: var(--blue-50);
+    background-color: var(--blue-);
     box-shadow: none;
+    color: var(--white-);
 }
 
 .desknavbar .socialmedia-icons i , .join-us-container .socialmedia-icons i{
@@ -144,21 +146,12 @@ a{
 .hero-text .cls-1.logo-a{
     animation: logoAnime 2s infinite;
 }
-.hero-text-container h1{
-    font-family: cairo;
-    font-size: 120px;
-    font-weight: bold;
-    color: var(--blue-100);
-    margin: 0;
-    word-break: break-all;
-    text-align: left;
-}
 .hero-text-container p{
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
-    color: #ffffff;
+    color: var(--white-);
 }
 
 .hero-text-container form input[type="submit"]{
@@ -172,7 +165,7 @@ a{
     border-radius: 4px;
     background-color: var(--blue-);
     color: var(--dark-blue-);
-    padding: 1px 40px;
+    padding: 4px 40px;
     box-shadow: 0 10px 15px -3px var(--dark-blue-20), 0 4px 6px -4px var(--dark-blue-20);
     cursor: pointer;
     transition: var(--global-transition);
@@ -194,7 +187,7 @@ a{
     border-radius: 4px;
     width: 50%;
     color: var(--dark-blue-);
-    padding: 1px 20px;
+    padding: 4px 20px;
     box-shadow: 0 10px 15px -3px var(--dark-blue-20), 0 4px 6px -4px var(--dark-blue-20);
     transition: var(--global-transition);
 }
@@ -261,7 +254,7 @@ a{
     /* margin: 40px 0; */
     width: 100%;
     height: fit-content;
-    background: var(--blue-80);
+    background: var(--blue-);
     padding-top: 40px;
     padding-bottom: 40px;
     direction: rtl;
@@ -275,7 +268,7 @@ a{
     font-size: 45px;
     width: max-content;
     margin: 0 15%;
-    color: var(--yellow-);
+    color: var(--dark-blue--);
 }
 .banner-text-container .banner-text-desc{
     font-family: 'Cairo';
@@ -284,7 +277,7 @@ a{
     font-size: 25px;
     width: 400px;
     margin: 0 15%;
-    color: #ffffff;
+    color: var(--white-);
 }
 
 
@@ -313,7 +306,7 @@ a{
     font-weight: 600;
     font-size: 30px;
     position: relative;
-    color: var(--dark-blue-80);
+    color: var(--dark-blue-);
     width: max-content;
 }
 .courses-category-container .courses-category-content .courses-category-title::before , .courses-container .courses-content .courses-title::before , .student-reviews-container .student-reviews-content .student-reviews-title::before{
@@ -334,7 +327,6 @@ a{
     margin: 30px 15px;
     width: 50%;
     height: 330px;
-    background-color: var(--blue-5);
     border-radius: 20px;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
     overflow: hidden;
@@ -380,7 +372,7 @@ a{
     border: 0;
     padding: 10px 50px;
     border-radius: 5px;
-    background-color: #dfe6e9;
+    background-color: var(--white-);
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
@@ -390,12 +382,12 @@ a{
     transition: var(--global-transition);
 }
 .courses-container .courses-content .courses-filter .courses-filter-item:hover{
-    background-color: #ffffff;
+    background-color: var(--white-);
     color: var(--orange-);
     box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
 }
 .courses-container .courses-content .courses-filter .courses-filter-item.active-filter{
-    background-color: #ffffff;
+    background-color: var(--white-);
     color: var(--orange-);
     box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
 }
@@ -418,13 +410,20 @@ a{
 .courses-container .courses-content .courses .course-item img{
     object-fit: cover;
 }
+.courses-container .courses-content .courses .course-item.comming-soon::before{
+    content: 'قريباً';
+    background-color: var(--yellow-);
+    color: var(--dark-blue-);
+}
 .courses-container .courses-content .courses .course-item::before{
     content: 'جديد';
+    background-color: #FF3A3A;
+    color: var(--white-);
+}
+.courses-container .courses-content .courses .course-item::before , .courses-container .courses-content .courses .course-item.comming-soon::before{
     position: absolute;
     top: 2%;
     right: -8%;
-    background-color: #FF3A3A;
-    color: #fff;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
@@ -486,20 +485,20 @@ button.course-cta-subsription, .course-cta-more-details {
 button.course-cta-subsription {
     border: 0;
     border-radius: 5px;
-    color: #ffffff;
-    background-color: var(--dark-blue-80);
+    color: var(--white-);
+    background-color: var(--dark-blue-);
 }
 button.course-cta-subsription:hover , .all-courses-button button:hover{
-    background-color: var(--dark-blue-50);
+    opacity: 0.8;
 }
 button.course-cta-more-details {
-    background-color: #ffffff;
-    border: 1px var(--blue-80) solid;
-    color: var(--blue-80);
+    background-color: var(--white-);
+    border: 1px var(--blue-) solid;
+    color: var(--blue-);
 }
 button.course-cta-more-details:hover{
-    background-color: var(--blue-80);
-    color: #fff;
+    background-color: var(--blue-);
+    color: var(--white-);
 }
 .all-courses-button{
     display: flex;
@@ -517,8 +516,8 @@ button.course-cta-more-details:hover{
     transition: var(--global-transition);
     box-shadow: 0 10px 15px -3px var(--blue-5), 0 4px 6px -4px var(--blue-5);
     border: none;
-    background-color: var(--dark-blue-80);
-    color: #dfe6e9;
+    background-color: var(--dark-blue-);
+    color: var(--white-);
     
 }
 
@@ -527,7 +526,7 @@ button.course-cta-more-details:hover{
 .video-section-container{
     width: 100%;
     height: 425px;
-    background: linear-gradient(180deg, #FF9F55 0%, #E6583B 100%);
+    background-color: var(--dark-blue-);
     display: flex;
     justify-content: center;
     margin-bottom: 300px;
@@ -555,14 +554,15 @@ button.course-cta-more-details:hover{
     right: 50%;
     border-radius: 50%;
     transform: translate(50%,-50%) scale(1);
-    background-color: var(--dark-blue-80);
+    background-color: var(--dark-blue-);
     cursor: pointer;
-    color: #fff;
+    color: var(--white-);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     animation: playPulse 2s infinite;
+    opacity: 0.8;
 }
 
 
@@ -597,7 +597,7 @@ button.course-cta-more-details:hover{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    color: var(--dark-blue-100);
+    color: var(--dark-blue-);
     margin: 0;
 }
 .why-elmas-container .why-elmas-content .elmas-numbers-container{
@@ -610,7 +610,7 @@ button.course-cta-more-details:hover{
     font-style: normal;
     font-weight: 900;
     font-size: 70px;
-    color: var(--blue-50);
+    color: var(--blue-);
     margin: 0;
 }
 .why-elmas-container .why-elmas-content .elmas-numbers-container .elmas-numbers-item p{
@@ -618,8 +618,9 @@ button.course-cta-more-details:hover{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    color: var(--dark-blue-50);
+    color: var(--dark-blue-);
     margin: 0;
+    opacity: 0.8;
 }
 
 /* =====================student reviews======================= */
@@ -634,7 +635,7 @@ button.course-cta-more-details:hover{
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item{
     width: 50%;
     height: 311px;
-    background-color: var(--blue-50);
+    background-color: var(--blue-);
     border-radius: 30px;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
     cursor: pointer;
@@ -664,7 +665,7 @@ button.course-cta-more-details:hover{
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    color: #ffffff;
+    color: var(--white-);
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-stars {
     display: flex;
@@ -680,7 +681,7 @@ button.course-cta-more-details:hover{
     font-weight: 500;
     font-size: 20px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white-);
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .overlay-star{
     position: absolute;
@@ -700,7 +701,7 @@ button.course-cta-more-details:hover{
     justify-content: center;
     align-items: center;
     margin: 40px 0;
-    background: linear-gradient(180deg, #FF9F55 -32.17%, #E6583B 154.33%);
+    background-color: var(--dark-blue-);
 }
 .contact-banner-container .contact-item{
     width: 25%;
@@ -711,7 +712,7 @@ button.course-cta-more-details:hover{
 }
 
 .contact-banner-container .contact-item i{
-    color: #fff;
+    color: var(--blue-);
     font-size: 50px;
     margin: 0 10px;
 }
@@ -719,7 +720,7 @@ button.course-cta-more-details:hover{
     font-family: 'Cairo';
     font-style: normal;
     margin: 0;
-    color: #ffffff;
+    color: var(--white-);
 }
 .contact-banner-container .contact-item p:nth-child(1){
     direction: ltr;
@@ -750,11 +751,11 @@ button.course-cta-more-details:hover{
 
 .join-us-container .join-us-title{
     font-size: 30px;
-    color: var(--blue-50);
+    color: var(--blue-);
 }
 .join-us-container .join-us-desc{
     font-size: 16px;
-    color: var(--dark-blue-80);
+    color: var(--dark-blue-);
 }
 .join-us-container .socialmedia-icons{
     width: 100%;
@@ -767,7 +768,7 @@ button.course-cta-more-details:hover{
 /* =====================footer======================= */
 footer{
     width: 100%;
-    background-color: var(--blue-50);
+    background-color: var(--dark-blue-);
     font-family: 'Cairo';
     font-style: normal;
 }
@@ -786,7 +787,7 @@ footer .footer-section-container .footer-contact-us{
     font-size: 14px;
 }
 footer .footer-section-container .footer-contact-us a , footer .footer-section-container .footer-site-content a{
-    color: #ffffff;
+    color: var(--white-);
     transition: var(--global-transition);
 }
 footer .footer-section-container .footer-contact-us a:hover , footer .footer-section-container .footer-site-content a:hover{
@@ -799,14 +800,14 @@ footer .footer-section-container .footer-newsletter-form-container , footer .foo
     padding: 40px 0;
 }
 footer .footer-section-container  h3{
-    color: #ffffff;
+    color: var(--white-);
     font-weight: 800;
     font-size: 20px;
     margin: 0;
 }
 
 footer .footer-section-container .footer-newsletter-form-container p{
-    color: #ffffff;
+    color: var(--white-);
     margin: 0;
     opacity: 0.9;
 }
@@ -817,11 +818,11 @@ footer .footer-section-container .footer-newsletter-form-container form{
 }
 footer .footer-section-container .footer-newsletter-form-container form input[type="email"]{
     appearance: none;
-    border: 1px solid var(--dark-blue-50);
+    border: 0;
     padding: 15px 5px;
     border-radius: 5px;
     margin-bottom: 4px;
-    color: var(--blue-80);
+    color: var(--dark-blue-);
     font-family: 'Cairo';
     font-style: normal;
 }
@@ -837,7 +838,7 @@ footer .footer-section-container .footer-newsletter-form-container form input[ty
     border: 0;
     cursor:pointer;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
-    background-color: var(--orange-);
+    background-color: var(--blue-);
     color: #ffffff;
 }
 footer .footer-section-container .footer-site-content a{
@@ -919,7 +920,7 @@ footer .copywrite-footer{
     font-weight: 600;
     font-size: 30px;
     position: relative;
-    color: var(--dark-blue-80);
+    color: var(--dark-blue-);
     width: max-content;
 }
 .contact-us-form-container .contact-us-form-content .contact-us-form-title::before{
@@ -953,7 +954,7 @@ footer .copywrite-footer{
     appearance: none;
 }
 .contact-us-form-container .contact-us-form-content .contact-us-form-items form label{
-    color: var(--dark-blue-80);
+    color: var(--dark-blue-);
 }
 
 .contact-us-form-container .contact-us-form-content .contact-us-form-items form input{
@@ -961,14 +962,14 @@ footer .copywrite-footer{
     border-radius: 6px;
     padding: 10px;
     background-color: #fff;
-    border: 1px var(--dark-blue-50) solid;
+    border: 1px var(--dark-blue-) solid;
     padding: 10px 8px;
 }
 .contact-us-form-container .contact-us-form-content .contact-us-form-items form textarea{
     appearance: none;
     outline: none;
     border-radius: 6px;
-    border: 1px var(--dark-blue-50) solid;
+    border: 1px var(--dark-blue-) solid;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 500;
@@ -984,13 +985,13 @@ footer .copywrite-footer{
     font-size: 18px;
     margin-top: 10px;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--white-);
     border: 0;
-    background-color: var(--blue-50);
+    background-color: var(--dark-blue-);
     transition: var(--global-transition);
 }
 .contact-us-form-container .contact-us-form-content .contact-us-form-items form input[type="submit"]:hover{
-    background-color: var(--blue-20);
+    opacity: 0.8;
 }
 
 /* responsive design */
