@@ -1,11 +1,12 @@
 $(document).ready(function() {
   // courses caroussel
   $('.courses-category-slider').slick({
-    centerMode: true,
-    centerPadding: '50px',
     slidesToShow: 2,
     autoplaySpeed: 4000,
     dots: true,
+    arrows: true,
+    prevArrow:".prev-button",
+    nextArrow:".next-button",
     customPaging : function(slider, i) {
         return '<span class="slider-dot"></span>';
     },
@@ -16,16 +17,13 @@ $(document).ready(function() {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          arrows: false,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: false,
           slidesToShow: 1
         }
       }
