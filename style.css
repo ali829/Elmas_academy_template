@@ -16,7 +16,7 @@
     --yellow-: #FFCF66 ;
     --blue-: #33CCFF;
     --dark-blue- : #020D2B;
-    --white-: #dfe6e9;
+    --white-: #ffffff;
 
     /* transition */
     --global-transition :  0.4s ease-in-out;
@@ -125,10 +125,11 @@ a{
 .top-hearo-container{
     display: flex;
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     direction: rtl;
     background-color: var(--dark-blue-);
     z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -229,7 +230,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-blue-);
+    position: absolute;
+    bottom: 0;
 }
 .mouse-scroll-container .mouse-scroll-icon{
     height: 60px;
@@ -277,7 +279,8 @@ a{
     font-size: 25px;
     width: 400px;
     margin: 0 15%;
-    color: var(--white-);
+    color: var(--dark-blue-);
+    opacity: 0.8;
 }
 
 
@@ -316,7 +319,7 @@ a{
     right: 0;
     height: 4px;
     width: 80%;
-    background-color: var(--yellow-);
+    background-color: var(--dark-blue-);
     border-radius: 2px;
 }
 .courses-category-container .courses-category-content .courses-category-slider{
@@ -382,12 +385,12 @@ a{
     transition: var(--global-transition);
 }
 .courses-container .courses-content .courses-filter .courses-filter-item:hover{
-    background-color: var(--white-);
+    background-color: var(--dark-blue-);
     color: var(--orange-);
     box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
 }
 .courses-container .courses-content .courses-filter .courses-filter-item.active-filter{
-    background-color: var(--white-);
+    background-color: var(--dark-blue-);
     color: var(--orange-);
     box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
 }
@@ -493,11 +496,11 @@ button.course-cta-subsription:hover , .all-courses-button button:hover{
 }
 button.course-cta-more-details {
     background-color: var(--white-);
-    border: 1px var(--blue-) solid;
-    color: var(--blue-);
+    border: 1px var(--dark-blue-) solid;
+    color: var(--dark-blue-);
 }
 button.course-cta-more-details:hover{
-    background-color: var(--blue-);
+    background-color: var(--dark-blue-);
     color: var(--white-);
 }
 .all-courses-button{
@@ -561,10 +564,26 @@ button.course-cta-more-details:hover{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    animation: playPulse 2s infinite;
-    opacity: 0.8;
+    z-index: 11;
 }
-
+.video-section-container .video-section-thumbnail::before,.video-section-container .video-section-thumbnail::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: var(--dark-blue-);
+    border-radius: 50%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    opacity: 0.8;
+    animation: ripple-1 2s infinite ease-in-out;
+}
+.video-section-container .video-section-thumbnail::after{
+    opacity: 0.6;
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
 
 /* =====================why elmas======================= */
 .why-elmas-container{
@@ -1337,3 +1356,24 @@ footer .footer-section-container .footer-newsletter-form-container form  {
     50%  {transform:  scale(1)}
     100% {transform:  scale(1.01)}
  }
+
+ @keyframes ripple-1{
+    0%{
+        transform: translate(50%,-50%) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(50%,-50%) scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes ripple-2{
+    0%{
+        transform: translate(50%,-50%) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(50%,-50%) scale(1.7);
+        opacity: 0;
+    }
+}
