@@ -1100,41 +1100,30 @@ footer .copywrite-footer{
 /* =====================hero single page======================= */
 .hero-top-container-courses , .hero-top-container-contact{
     width: 100%;
-    height: 603px;
+    height: fit-content;
     font-family: 'Cairo';
     font-style: normal;
-    color:var(--dark-blue-100);
+    color:var(--white-);
+    background-color: var(--dark-blue-);
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.hero-top-container-courses::before , .hero-top-container-contact::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-size: cover;
-    z-index: -1;
-}
-.hero-top-container-courses::before{
-    background-image: url('assets/photos/hero_picture/Picture1_8\ 2.png');
-}
-.hero-top-container-contact::before{
-    background-image: url('assets/photos/hero_picture/contactus-1\ 1.jpg');
-}
+
 .hero-top-container-courses h3 , .hero-top-container-contact h3{
     font-weight: 700;
     font-size: 60px;
     margin: 0;
-    padding-top: 170px;
 }
-.hero-top-container-courses p , .hero-top-container-contact p{
-    font-weight: 500;
-    font-size: 20px;
-    margin: 0;
+.hero-top-container-contact h3{
+    position: absolute;
+    z-index: 11;
+    width: 6em;
+    right: 50%;
+    top: 5%;
+    color: var(--dark-blue-);
 }
 
 
@@ -1509,18 +1498,17 @@ footer .footer-section-container .footer-newsletter-form-container form  {
 }
 /* =====================hero single page======================= */
     .hero-top-container-courses , .hero-top-container-contact{
-        height: 150px;
-    }
-    .hero-top-container-courses::before , .hero-top-container-contact::before{
-        background-size: contain;
-        background-repeat: no-repeat ;
+        height: fit-content;
     }
     .hero-top-container-courses h3 , .hero-top-container-contact h3{
         padding-top: 20px;
         font-size: 25px;
     }
-    .hero-top-container-courses p , .hero-top-container-contact p{
-        font-size: 15px;
+    .hero-top-container-courses img , .hero-top-container-contact img{
+        width: 80%;
+    }
+    .hero-top-container-contact h3{
+        top: 0;
     }
 
 /* =====================contact us form======================= */
