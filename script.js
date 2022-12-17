@@ -36,10 +36,13 @@ $(document).ready(function() {
     centerMode: true,
     centerPadding: '50px',
     slidesToShow: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     rtl:  true,
     dots: false,
+    arrows: true,
+    prevArrow:".prev-button-review",
+    nextArrow:".next-button-review",
     responsive: [
       {
         breakpoint: 768,

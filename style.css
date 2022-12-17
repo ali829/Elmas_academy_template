@@ -382,7 +382,7 @@ a{
     transition: var(--global-transition);
 }
 .courses-category-container .courses-category-content button.prev-button.slick-arrow:hover , .courses-category-container .courses-category-content button.next-button.slick-arrow:hover{
-    transform: scale(1);
+    opacity: 0.8;
 }
 .courses-category-container .courses-category-content button.prev-button.slick-arrow{
     left: -10%;
@@ -863,32 +863,41 @@ button.course-cta-more-details:hover{
 
 /* =====================student reviews======================= */
 .student-reviews-container .student-reviews-content .student-reviews-slider{
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: 10px 0;
+}
+.student-reviews-container .student-reviews-content{
+    position: relative;
 }
 
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item{
     width: 50%;
-    height: 311px;
-    background-color: var(--blue-);
+    height: fit-content;
     border-radius: 30px;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
     cursor: pointer;
     position: relative;
-    padding-top: 35px;
+    background-color: var(--dark-blue-);
     margin: 2% 5px;
+    display: flex;
+    align-items: center;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-reviews-name-desc-star-group{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-reviews-name-desc-star-group p.student-review-desc{
+    border-right: 2px var(--yellow-) solid;
+    padding: 5px 20px;
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-photo{
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    top: -15%;
-    right: 50%;
-    transform: translateX(50%);
+    height: 100%;
+    width: 300px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -897,18 +906,18 @@ button.course-cta-more-details:hover{
     object-fit: cover;
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-name{
-    margin-top: 40px;
     text-align: center;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     color: var(--white-);
+    margin: 0;
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-stars {
     display: flex;
     justify-content: center;
-    font-size: 30px; 
+    font-size: 16px; 
 }
 .student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-review-stars i {
     margin: 0 4px;
@@ -921,13 +930,31 @@ button.course-cta-more-details:hover{
     text-align: center;
     color: var(--white-);
 }
-.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .overlay-star{
+.student-reviews-container .student-reviews-content button.prev-button-review.slick-arrow , .student-reviews-container .student-reviews-content button.next-button-review.slick-arrow{
     position: absolute;
-    font-size: 100px;
-    top: 10px;
-    left: 10px;
-    transform: rotate(40deg);
-    animation: starSpin 4s linear infinite;
+    font-family: 'cairo';
+    font-size: 15px ;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:0;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
+    color: var(--white-);
+    background-color:var(--dark-blue-);
+    transform: scale(1.08);
+    cursor: pointer;
+    transition: var(--global-transition);
+}
+.student-reviews-container .student-reviews-content button.prev-button-review.slick-arrow:hover , .student-reviews-container .student-reviews-content button.next-button-review.slick-arrow:hover{
+    opacity: 0.8;
+}
+.student-reviews-container .student-reviews-content button.prev-button-review.slick-arrow{
+    left: 0;
+    transform: rotate(180deg);
 }
 
 /* =====================contact banner======================= */
@@ -1400,6 +1427,9 @@ footer .copywrite-footer{
     .courses-category-container .courses-category-content button.prev-button , .courses-category-container .courses-category-content button.next-button{
         display: none;
     }
+    .courses-category-content .prev-button , .courses-category-content .next-button{
+        display: none !important;
+    }
 
 
 
@@ -1468,7 +1498,16 @@ footer .copywrite-footer{
 .student-reviews-container .student-reviews-content .student-reviews-slider{
     width: 100%;
 }
-
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item{
+    flex-direction: column;
+    padding: 10px;
+}
+.student-reviews-container .student-reviews-content .student-reviews-slider .student-reviews-item .student-reviews-img-group {
+    display: none;
+}
+.prev-button-review , .next-button-review{
+    display: none;
+}
 
 
 /* =====================student reviews======================= */
