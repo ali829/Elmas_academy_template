@@ -354,12 +354,12 @@ a{
 .courses-category-container .courses-category-content .courses-category-slider .slider-dot{
     width: 15px;
     height: 15px;
-    border:2px var(--dark-blue-) solid;
+    border:1px var(--dark-blue-) solid;
     display: inline-block;
     border-radius: 50%;
 }
 .slick-dots li.slick-active .slider-dot{
-    background-color: var(--yellow-);
+    background-color: var(--dark-blue-);
     border: 0;
 }
 .courses-category-container .courses-category-content button.prev-button.slick-arrow , .courses-category-container .courses-category-content button.next-button.slick-arrow{
@@ -369,20 +369,20 @@ a{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border:2px solid var(--dark-blue-);
+    border:0;
     top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 15px -3px rgba(255,159,85,0.1), 0 4px 6px -4px rgba(255,159,85,0.1);
-    color: var(--dark-blue-);
-    background-color:var(--white-);
+    color: var(--white-);
+    background-color:var(--dark-blue-);
+    transform: scale(1.08);
     cursor: pointer;
+    transition: var(--global-transition);
 }
 .courses-category-container .courses-category-content button.prev-button.slick-arrow:hover , .courses-category-container .courses-category-content button.next-button.slick-arrow:hover{
-    background-color: var(--dark-blue-);
-    color: var(--white-);
-    border: 0;
+    transform: scale(1);
 }
 .courses-category-container .courses-category-content button.prev-button.slick-arrow{
     left: -10%;
@@ -950,7 +950,7 @@ button.course-cta-more-details:hover{
 }
 
 .contact-banner-container .contact-item i{
-    color: var(--blue-);
+    color: var(--yellow-);
     font-size: 50px;
     margin: 0 10px;
 }
@@ -1073,11 +1073,12 @@ footer .footer-section-container .footer-newsletter-form-container form input[ty
     border-radius: 5px;
     font-family: 'Cairo';
     font-style: normal;
+    font-weight: 600;
     border: 0;
     cursor:pointer;
     box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
-    background-color: var(--blue-);
-    color: #ffffff;
+    background-color: var(--yellow-);
+    color: var(--dark-blue-);
 }
 footer .footer-section-container .footer-site-content a{
     display: block;

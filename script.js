@@ -104,7 +104,7 @@ const playButton = document.querySelector('.video-section-play-icon');
 
 playButton.addEventListener('click', () => {
   videoPopup.classList.add('show')
- 
+  elmasVideo.play();
 })
 
 videoPopup.addEventListener('mouseup', (e) => {
