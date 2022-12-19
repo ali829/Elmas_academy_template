@@ -98,6 +98,23 @@ popupCourseDeatils.addEventListener('mouseup',(e)=>{
     popupCourseDeatils.classList.remove('show')
   }
 })
+// home page course detail popup
+var btnSubscription = document.querySelectorAll('.course-cta-subsription')
+var popupSubscription = document.querySelector('.course-subscription-popup-container')
+var btnSubscription2 = document.querySelector('.single-course-subscribe-btn')
+btnSubscription.forEach((item,index)=>{
+  item.addEventListener("click",()=>{
+    popupSubscription.classList.add('show')
+  })
+})
+btnSubscription2.addEventListener('click' , () => {
+  popupSubscription.classList.add('show')
+})
+popupSubscription.addEventListener('mouseup',(e)=>{
+  if(e.target == popupSubscription){
+    popupSubscription.classList.remove('show')
+  }
+})
 
 
 // home page video popup

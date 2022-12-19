@@ -556,7 +556,7 @@ button.course-cta-more-details:hover{
     color: var(--white-);
     
 }
-.courses-container .course-detail-popup-container{
+.courses-container .course-detail-popup-container , .courses-container .course-subscription-popup-container{
     position: fixed;
     top: 0;
     width: 100vw;
@@ -703,8 +703,83 @@ button.course-cta-more-details:hover{
     opacity: 0.8;
 }
 
-.courses-container .course-detail-popup-container.show{
+.courses-container .course-detail-popup-container.show , .courses-container .course-subscription-popup-container.show{
     transform: scale(1);
+}
+
+.courses-container .course-subscription-content{
+    width: 20%;
+    background-color: var(--white-);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    padding: 20px;
+    font-family: 'Cairo';
+    font-style: normal;
+}
+.courses-container .course-subscription-content h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark-blue-);
+}
+.courses-container .course-subscription-content .course-subscription-top-bar{
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+}
+.courses-container .course-subscription-content .course-subscription-top-bar .course-subscription-top-bar-thumbnail{
+    width: 30%;
+}
+.courses-container .course-subscription-content .course-subscription-top-bar .course-subscription-top-bar-title{
+    width: 70%;
+    padding: 0 10px;
+    background-color: var(--dark-blue-);
+    color: var(--white-);
+    
+}
+
+.courses-container .course-subscription-content form{
+    margin: 20px 0;
+}
+
+.courses-container .course-subscription-content form .course-subscription-form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.courses-container .course-subscription-content form .course-subscription-form-item label{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.courses-container .course-subscription-content form .course-subscription-form-item input , .courses-container .course-subscription-content form .course-subscription-form-item select{
+    outline: none;
+    border-radius: 6px;
+    padding: 10px 5px;
+    border: 1px var(--dark-blue-) solid;
+}
+
+.courses-container .course-subscription-content form .course-subscription-form-item button{
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 10px 5px;
+    border: 0;
+    box-shadow: 0 10px 15px -3px var(--blue-10), 0 4px 6px -4px var(--blue-10);
+    transition: var(--global-transition);
+    background-color: var(--dark-blue-);
+    color: var(--yellow-);
+    cursor: pointer;
+}
+.courses-container .course-subscription-content form .course-subscription-form-item button:hover{
+    background-color: var(--white-);
+    border: 1px var(--dark-blue-) solid;
+    color: var(--dark-blue-);
 }
 
 /* =====================video section======================= */
@@ -1455,6 +1530,9 @@ footer .copywrite-footer{
     }
     .courses-container .single-course-details-container .single-course-teacher-container{
         width: 50%;
+    }
+    .courses-container .course-subscription-content{
+        width: 80%;
     }
 
 
