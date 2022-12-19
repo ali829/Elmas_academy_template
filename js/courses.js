@@ -213,6 +213,6 @@ popupSubscription.addEventListener('mouseup',(e)=>{
 let orderBtn = document.querySelector('.course-subscription-btn');
 orderBtn.addEventListener('click' , () =>{
     let msg = `${document.querySelector('.form-control').value}`
-    let url = `https://api.whatsapp.com/send/?phone=%2B212624441384&?text=Check out this value: ${msg}`
+    let url = `https://wa.me/212624441384?text=Check out this value: ${msg}`
     window.open(url,'_blank');
 })
