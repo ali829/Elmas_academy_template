@@ -33,7 +33,7 @@ let courses = [
         category:'ريادة الأعمال'
     },
     {
-        title: "تصميم العرافيك",
+        title: "تصميم الغرافيك",
         price: "250",
         studentsNumber: 15,
         totalHours: 40,
@@ -149,10 +149,28 @@ function buildCoursesSection(data){
     }
 }
 
+function singleCourseDetailBuild(singleCourse) {
+    document.querySelector('.single-course-title').innerHTML = singleCourse.title;
+    document.querySelector('.single-course-price').innerHTML = singleCourse.price + '<span>د.م</span>';
+    document.querySelector('.single-course-img').setAttribute('src',singleCourse.image_url);
+    document.querySelector('.single-course-students').innerHTML = singleCourse.studentsNumber;
+    document.querySelector('.single-course-topics').innerHTML = singleCourse.topics;
+    document.querySelector('.single-course-hours').innerHTML = singleCourse.totalHours;
+    document.querySelector('.single-course-teacher-name').innerHTML = singleCourse.teacher.fullname;
+    document.querySelector('.single-course-teacher-desc').innerHTML = singleCourse.teacher.descreption;
+    let chaptercontainer = document.querySelector('.chapters-container');
+    chaptercontainer.innerHTML = "";
+    for (let i = 0; i < singleCourse.chapters.length; i++) {
+        const element = singleCourse.chapters[i];
+        chaptercontainer.innerHTML += `<li>${element}</li>`
+    }
+}
 
-
-
-
+function subscriptionBuild(singleCourse , index) {
+    document.querySelector('.course-subscription-top-bar-title').innerHTML = singleCourse.title;
+    document.querySelector('.course-subscription-top-bar-thumbnail-img').setAttribute('src' , singleCourse.image_url);
+    document.querySelector('.form-control').value = index;
+}
 
 
 // home page course detail popup
@@ -161,6 +179,8 @@ var popupCourseDeatils = document.querySelector('.course-detail-popup-container'
 btnCourseDeatils.forEach((item,index)=>{
   item.addEventListener("click",()=>{
     popupCourseDeatils.classList.add('show')
+    singleCourseDetailBuild(courses[index])
+    subscriptionBuild(courses[index] , index)
   })
 })
 popupCourseDeatils.addEventListener('mouseup',(e)=>{
@@ -168,6 +188,7 @@ popupCourseDeatils.addEventListener('mouseup',(e)=>{
     popupCourseDeatils.classList.remove('show')
   }
 })
+
 // home page course detail popup
 var btnSubscription = document.querySelectorAll('.course-cta-subsription')
 var popupSubscription = document.querySelector('.course-subscription-popup-container')
@@ -175,6 +196,7 @@ var btnSubscription2 = document.querySelector('.single-course-subscribe-btn')
 btnSubscription.forEach((item,index)=>{
   item.addEventListener("click",()=>{
     popupSubscription.classList.add('show')
+    subscriptionBuild(courses[index] , index)
   })
 })
 btnSubscription2.addEventListener('click' , () => {
@@ -184,4 +206,13 @@ popupSubscription.addEventListener('mouseup',(e)=>{
   if(e.target == popupSubscription){
     popupSubscription.classList.remove('show')
   }
+})
+
+
+// wtsp order msg
+let orderBtn = document.querySelector('.course-subscription-btn');
+orderBtn.addEventListener('click' , () =>{
+    let msg = `${document.querySelector('.form-control').value}`
+    let url = `https://api.whatsapp.com/send/?phone=%2B212624441384&?text=Check out this value: ${msg}`
+    window.open(url,'_blank');
 })

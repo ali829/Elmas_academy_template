@@ -670,6 +670,9 @@ button.course-cta-more-details:hover{
     font-weight: 700;
     font-size: 14px;
 }
+.courses-container .single-course-details-container .single-course-teacher-container h3 .single-course-teacher-name{
+    color: var(--white-);
+}
 .courses-container .single-course-details-container .single-course-teacher-container p{
     font-weight: 500;
     font-size: 12px;
