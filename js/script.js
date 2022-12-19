@@ -63,6 +63,15 @@ $(document).ready(function() {
       }
     ]
   })
+
+// active link
+
+$('.desknav-items a' ).each(function(index){
+  var currentLink = $(this).attr('href');
+  if(currentLink == window.location.pathname ){
+    $(this).addClass('active-link')
+  }
+})
 });
 
 
@@ -85,38 +94,6 @@ let siteName = window.location.origin;
 document.querySelector('.copywrite-footer-actual-year').textContent = actualYear;
 document.querySelector('.copywrite-footer-sitename').textContent = siteName;
 
-// home page course detail popup
-var btnCourseDeatils = document.querySelectorAll('.course-cta-more-details')
-var popupCourseDeatils = document.querySelector('.course-detail-popup-container')
-btnCourseDeatils.forEach((item,index)=>{
-  item.addEventListener("click",()=>{
-    popupCourseDeatils.classList.add('show')
-  })
-})
-popupCourseDeatils.addEventListener('mouseup',(e)=>{
-  if(e.target == popupCourseDeatils){
-    popupCourseDeatils.classList.remove('show')
-  }
-})
-// home page course detail popup
-var btnSubscription = document.querySelectorAll('.course-cta-subsription')
-var popupSubscription = document.querySelector('.course-subscription-popup-container')
-var btnSubscription2 = document.querySelector('.single-course-subscribe-btn')
-btnSubscription.forEach((item,index)=>{
-  item.addEventListener("click",()=>{
-    popupSubscription.classList.add('show')
-  })
-})
-btnSubscription2.addEventListener('click' , () => {
-  popupSubscription.classList.add('show')
-})
-popupSubscription.addEventListener('mouseup',(e)=>{
-  if(e.target == popupSubscription){
-    popupSubscription.classList.remove('show')
-  }
-})
-
-
 // home page video popup
 const videoPopup = document.querySelector('.video-popup-container')
 const elmasVideo = document.querySelector('#elmas-video')
@@ -134,3 +111,7 @@ videoPopup.addEventListener('mouseup', (e) => {
     elmasVideo.currentTime = 0;
   }
 })
+
+
+
+ 

@@ -87,7 +87,9 @@ a{
 .desknav-items a{
     text-decoration: none;
 }
-
+.desknav-items a.active-link li{
+    color: var(--yellow-);
+}
 
 .desknavbar .socialmedia-icons li , .join-us-container .socialmedia-icons li{
     background-color: var(--white-);
@@ -1340,7 +1342,7 @@ footer .copywrite-footer{
         height: 32px;
         width: 32px;
         top: 40px;
-        left: 20px;
+        left: 0;
         z-index: 5;
         opacity: 0;
         cursor: pointer;
