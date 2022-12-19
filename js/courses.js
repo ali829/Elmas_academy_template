@@ -212,7 +212,7 @@ popupSubscription.addEventListener('mouseup',(e)=>{
 // wtsp order msg
 let orderBtn = document.querySelector('.course-subscription-btn');
 orderBtn.addEventListener('click' , () =>{
-    let msg = `${document.querySelector('.form-control').value}`
+    let msg = `${ document.querySelector('.course-subscription-top-bar-title').textContent}`
     let url = `https://wa.me/212624441384?text=Check out this value: ${msg}`
     window.open(url,'_blank');
 })
