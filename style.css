@@ -87,10 +87,9 @@ a{
 .desknav-items a{
     text-decoration: none;
 }
-.desknav-items a.active-link li{
+.desknav-items a.active-link li , .desknav-items a.active-link li i{
     color: var(--yellow-);
 }
-
 .desknavbar .socialmedia-icons li , .join-us-container .socialmedia-icons li{
     background-color: var(--white-);
     color: var(--dark-blue-);
