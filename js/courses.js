@@ -14,7 +14,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:1,
-        category:'التسويق الالكتروني '
+        category:'marketing-digitale'
     },
     {
         title: "ريادة الأعمال",
@@ -30,7 +30,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:0,
-        category:'ريادة الأعمال'
+        category:'business-management'
     },
     {
         title: "تصميم الغرافيك",
@@ -46,7 +46,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:1,
-        category:'تصميم العرافيك'
+        category:'graphic-design'
     },
     {
         title: "موشن جرافيك",
@@ -62,7 +62,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:1,
-        category:'موشن جرافيك'
+        category:'graphic-design'
     },
     {
         title: "التصوير السينمائي الفوتوغرافي و تحرير الفيديو",
@@ -78,7 +78,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:1,
-        category:'التصوير السينمائي الفوتوغرافي و تحرير الفيديو'
+        category:'photo-video-montage'
     },
     {
         title: "تطوير المواقع",
@@ -94,7 +94,7 @@ let courses = [
         },
         // 0 means soon & 1 means new
         status:0,
-        category:'تطوير المواقع'
+        category:'web-dev'
     },
 ]
 
@@ -109,7 +109,7 @@ function buildCoursesSection(data){
     for (let index = 0; index < data.length; index++) {
         const element = data[index];
         var courseItem = `
-        <div data-aos="fade-up" class="course-item ${(element.status == 1 ) ? '' : 'comming-soon'}">
+        <div  class="${element.category} course-item ${(element.status == 1 ) ? '' : 'comming-soon'}">
         <img src="${element.image_url}" alt="" srcset="" width="100%" height="40%">
         <div class="course-details">
             <p class="course-details-title"> ${element.title} </p>
@@ -216,3 +216,18 @@ orderBtn.addEventListener('click' , () =>{
     let url = `https://wa.me/212624441384?text=Check out this value: ${msg}`
     window.open(url,'_blank');
 })
+
+// courses filter
+$('.courses-filter-item').click(function(){
+    //active filter
+    $(this).addClass('active-filter').siblings().removeClass('active-filter');
+    const currentFilter = $(this).attr('data-filter');
+    if (currentFilter == 'all') {
+        $('.course-item').show('200')
+    }else{
+        $('.course-item').not(`.${currentFilter}`).hide('200')
+        $('.course-item').filter(`.${currentFilter}`).show('200')
+    }
+})
+
+//active filter
