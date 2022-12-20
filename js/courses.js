@@ -229,5 +229,3 @@ $('.courses-filter-item').click(function(){
         $('.course-item').filter(`.${currentFilter}`).show('200')
     }
 })
-
-//active filter

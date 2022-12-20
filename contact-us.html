@@ -130,9 +130,9 @@
 
 <!-- top hero -->
 <div class="hero-top-container-contact">
-    <h3> لا تتردد بالإتصال بنا</h3>
+    <h3 style="animation: 0.7s ease-out 0s 1 slideInFromLeft;"> لا تتردد بالإتصال بنا</h3>
     <img style="position: absolute; bottom: 0; " src="assets/photos/hero_picture/Ellipse 1.png" alt="">
-    <img style="z-index: 11;" src="assets/photos/hero_picture/Contact 1.png" alt="">
+    <img style="z-index: 11; animation: 0.7s ease-out 0s 1 slideInFromLeft;" src="assets/photos/hero_picture/Contact 1.png" alt="">
 </div>
 <!-- end of top hero -->
 
@@ -145,15 +145,15 @@
         <div class="contact-us-form-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13190.702092662545!2d-6.5758451!3d34.2568224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7380c710fdec455!2sELMAS%20MEDIA%20-%20Digital%20Agency!5e0!3m2!1sfr!2sma!4v1671119009739!5m2!1sfr!2sma" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <form action="">
+        <form class="elmas-contact-form" action="">
             <label for="">الإسم:</label>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="contact-name" required>
             <label for="">رقم الهاتف:</label>
-            <input type="tel" name="" id="">
+            <input class="contact-phone" type="tel" name="" id="contact-phone" required>
             <label for="">البريد الإلكتروني:</label>
-            <input type="email" name="" id="">
+            <input type="email" name="" id="contact-mail" required>
             <label for="">اللرسالة:</label>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <textarea name="" id="contact-subject" cols="30" rows="5" required></textarea>
             <input type="submit" value="إرسال">
         </form>
         </div>
@@ -258,7 +258,11 @@
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <!-- js -->
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

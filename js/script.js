@@ -74,6 +74,12 @@ $('.desknav-items a' ).each(function(index){
     $(this).addClass('active-link')
   }
 })
+
+
+
+
+
+
 });
 
 
@@ -114,6 +120,3 @@ videoPopup.addEventListener('mouseup', (e) => {
   }
 })
 
-
-
- 

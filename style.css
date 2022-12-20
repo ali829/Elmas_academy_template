@@ -1218,6 +1218,7 @@ footer .copywrite-footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero-top-container-courses h3 , .hero-top-container-contact h3{
