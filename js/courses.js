@@ -109,7 +109,7 @@ function buildCoursesSection(data){
     for (let index = 0; index < data.length; index++) {
         const element = data[index];
         var courseItem = `
-        <div class="course-item ${(element.status == 1 ) ? '' : 'comming-soon'}">
+        <div data-aos="fade-up" class="course-item ${(element.status == 1 ) ? '' : 'comming-soon'}">
         <img src="${element.image_url}" alt="" srcset="" width="100%" height="40%">
         <div class="course-details">
             <p class="course-details-title"> ${element.title} </p>

@@ -1,3 +1,6 @@
+// init AOS
+AOS.init();
+
 $(document).ready(function() {
   // courses caroussel
   $('.courses-category-slider').slick({
@@ -65,7 +68,6 @@ $(document).ready(function() {
   })
 
 // active link
-
 $('.desknav-items a' ).each(function(index){
   var currentLink = $(this).attr('href');
   if(currentLink == window.location.pathname ){

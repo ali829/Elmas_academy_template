@@ -12,6 +12,8 @@
     <!-- slick -->
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Elmas academy - home</title>
 </head>
 <body>
@@ -196,8 +198,8 @@
 <!-- courses category  -->
 <div class="courses-category-container">
     <div class="courses-category-content">
-        <p class="courses-category-title">الفئات التعليمية</p>
-        <div class="courses-category-slider">
+        <p class="courses-category-title" data-aos="fade-right">الفئات التعليمية</p>
+        <div class="courses-category-slider" data-aos="fade-up">
             <div class="courses-category-slider-item">
                 <img src="assets/photos/formation category/Web-dev--Thumb.png" width="100%" height="80%" alt="">
                 <p>البرمجة والتطوير</p>
@@ -232,14 +234,14 @@
 <!-- courses  -->
 <div class="courses-container">
     <div class="courses-content">
-        <p class="courses-title">
+        <p class="courses-title" data-aos="fade-right">
             الدورات التعليمية
         </p>
         <div class="courses-filter">
-            <button class="courses-filter-item active-filter">الكل</button>
-            <button class="courses-filter-item">الفن والتصميم</button>
-            <button class="courses-filter-item">التصوير والمونطاج</button>
-            <button class="courses-filter-item">التسويق الالكتروني</button>
+            <button class="courses-filter-item active-filter" data-aos="fade-up">الكل</button>
+            <button class="courses-filter-item" data-aos="fade-up">الفن والتصميم</button>
+            <button class="courses-filter-item" data-aos="fade-up">التصوير والمونطاج</button>
+            <button class="courses-filter-item" data-aos="fade-up">التسويق الالكتروني</button>
         </div>
         <div class="courses">
 
@@ -347,7 +349,7 @@
     <div class="video-popup-container">
         <div class="video-popup-content">
             <video id="elmas-video" width="320" height="240" controls>
-                <source src="assets/videos/ELMAS MEDIA MOTION.mp4" type="video/mp4">
+                <source src="assets/videos/ELMAS MEDIA MOTION.mp4" type="video/mp4" >
                 Error Message
             </video>
         </div>
@@ -359,7 +361,7 @@
 <!-- why elmas media -->
 <div class="why-elmas-container">
     <div class="why-elmas-content">
-        <div class="why-elmas-info">
+        <div class="why-elmas-info" data-aos="fade-left">
             <h3>لماذا Elmas Academy ؟</h3>
             <p>دورات من طرف مختصين في المجال، مع استراتيجية تعليم ذكية.</p>
             <div class="elmas-numbers-container">
@@ -377,7 +379,7 @@
                 </div>
             </div>
         </div>
-        <div class="why-elmas-canva">
+        <div class="why-elmas-canva" data-aos="fade-right">
             <img src="assets/photos/Frame.png" alt="">
         </div>
     </div>
@@ -388,10 +390,10 @@
 <!-- student review -->
     <div class="student-reviews-container">
         <div class="student-reviews-content">
-            <p class="student-reviews-title">
+            <p class="student-reviews-title" data-aos="fade-right">
                 آراء متدربينا
             </p>
-            <div class="student-reviews-slider">
+            <div class="student-reviews-slider" data-aos="fade-up">
                 <div class="student-reviews-item">
                     <div class="student-reviews-img-group">
                         <div class="student-review-photo">
@@ -473,8 +475,8 @@
             <i class="fi fi-sr-comment-alt"></i>
         </div>
         <div>
-            <p class="contact-banne-value">+212 6 63 20 00 90</p>
-            <p class="contact-banne-tool">تواصل عبر الواتس اب</p>
+            <p class="contact-banne-value" data-aos="fade-right">+212 6 63 20 00 90</p>
+            <p class="contact-banne-tool" data-aos="fade-right">تواصل عبر الواتس اب</p>
         </div>
     </div>
     <div class="contact-item">
@@ -482,8 +484,8 @@
             <i class="fi fi-sr-envelope"></i>
         </div>
         <div>
-            <p class="contact-banne-value">elmasacademy@gmail.com</p>
-            <p class="contact-banne-tool">تواصل عبر البريد الالكتروني</p>
+            <p class="contact-banne-value" data-aos="fade-right">elmasacademy@gmail.com</p>
+            <p class="contact-banne-tool" data-aos="fade-right">تواصل عبر البريد الالكتروني</p>
         </div>
     </div>
     <div class="contact-item">
@@ -491,8 +493,8 @@
             <i class="fi fi-sr-phone-call"></i>
         </div>
         <div>
-            <p class="contact-banne-value">+212 5 30 14 78 31</p>
-            <p class="contact-banne-tool">تواصل عبر الهاتف</p>
+            <p class="contact-banne-value" data-aos="fade-right">+212 5 30 14 78 31</p>
+            <p class="contact-banne-tool" data-aos="fade-right">تواصل عبر الهاتف</p>
         </div>
     </div>
 </div>
@@ -557,6 +559,8 @@
 <!-- slick js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="slick-1.8.1/slick/slick.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- js -->
 <script src="js/script.js"></script>
 <script src="js/courses.js"></script>
