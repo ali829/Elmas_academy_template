@@ -167,7 +167,7 @@
     </div>
     <div class="hero-canva">
         <div class="hero-image">
-            <img src="/assets/photos/hero_picture/Man 2.png" height="100%">
+            <img src="../Elmas_academy_template/assets/photos/hero_picture/Man 2.png" height="100%">
         </div>
         <div class="background-shape">
             <svg class="svg-group" width="596" height="884" viewBox="0 0 596 884" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,27 +201,27 @@
         <p class="courses-category-title" data-aos="fade-right">الفئات التعليمية</p>
         <div class="courses-category-slider" data-aos="fade-up">
             <div class="courses-category-slider-item">
-                <img src="assets/photos/formation category/Web-dev--Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Web-dev--Thumb.png" width="100%" height="80%" alt="">
                 <p>البرمجة والتطوير</p>
             </div>
             <div class="courses-category-slider-item">
-                <img src="assets/photos/formation category/Business-Management--Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Business-Management--Thumb.png" width="100%" height="80%" alt="">
                 <p>ريادة الأعمال</p>
             </div>
             <div class="courses-category-slider-item">
-                <img src="assets/photos/formation category/Motion-Design--Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Motion-Design--Thumb.png" width="100%" height="80%" alt="">
                 <p> موشن جرافيك</p>
             </div>
             <div class="courses-category-slider-item">
-                <img src="/assets/photos/formation category/Marketing-Digital-Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Marketing-Digital-Thumb.png" width="100%" height="80%" alt="">
                 <p>التسويق الالكتروني </p>
             </div>
             <div class="courses-category-slider-item">
-                <img src="/assets/photos/formation category/Videography--Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Videography--Thumb.png" width="100%" height="80%" alt="">
                 <p>التصوير والمونتاج</p>
             </div>
             <div class="courses-category-slider-item">
-                <img src="/assets/photos/formation category/Design-Graphic-Thumb.png" width="100%" height="80%" alt="">
+                <img src="../Elmas_academy_template/assets/photos/formation category/Design-Graphic-Thumb.png" width="100%" height="80%" alt="">
                 <p>الفن والتصميم</p>
             </div>
         </div>
