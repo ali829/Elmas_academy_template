@@ -68,7 +68,8 @@ $(document).ready(function() {
     // active link
     $('.desknav-items a').each(function(index) {
         var currentLink = $(this).attr('href');
-        if (currentLink == window.location.pathname) {
+        var path = window.location.pathname;
+        if (path.includes(currentLink)) {
             $(this).addClass('active-link')
         }
     })

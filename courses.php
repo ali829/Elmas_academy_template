@@ -113,11 +113,7 @@
                     <label for="">الإسم:</label>
                     <input type="text">
                 </div>
-                <div class="course-subscription-form-item">
-                    <label for="">رقم الهاتف:</label>
-                    <input type="tel">
-                </div>
-                <div class="course-subscription-form-item">
+                <!-- <div class="course-subscription-form-item">
                     <label for="">الدورة:</label>
                     <select class="form-control">
                         <option value="0">التسويق الرقمي</option>
@@ -127,7 +123,7 @@
                         <option value="4">التصوير السينمائي الفوتوغرافي و تحرير الفيديو</option>
                         <option value="5">تطوير المواقع</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="course-subscription-form-item">
                     <button type="button" class="course-subscription-btn">أرسل الطّلب</button>
                 </div>
