@@ -1,100 +1,100 @@
 let courses = [
     // 0 means soon & 1 means new
     {
-        title: "التسويق الرقمي",
+        title: "دورة التسويق الإلكتروني الشاملة الإحترافية  -  Formation Marketing Digital",
         price: "200",
         studentsNumber: 20,
         totalHours: 25,
-        topics:30,
-        image_url:"assets/photos/formation/Digital-Marketing---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , "تصميم بوستر سوشل ميديا"],
-        teacher:{
+        topics: 30,
+        image_url: "assets/photos/formation/Digital-Marketing---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:1,
-        category:'marketing-digitale'
+        status: 1,
+        category: 'marketing-digitale'
     },
     {
-        title: "ريادة الأعمال",
+        title: "  دورة ريادة الأعمال و القيادة  -  Formation leadershiping",
         price: "300",
         studentsNumber: 20,
         totalHours: 25,
-        topics:30,
-        image_url:"assets/photos/formation/Business-management---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , ""],
-        teacher:{
+        topics: 30,
+        image_url: "assets/photos/formation/Business-management---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", ""],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:0,
-        category:'business-management'
+        status: 0,
+        category: 'business-management'
     },
     {
-        title: "تصميم الغرافيك",
+        title: "دورة الغرافيك ديزاين  -  Graphic Design",
         price: "250",
         studentsNumber: 15,
         totalHours: 40,
-        topics:25,
-        image_url:"assets/photos/formation/Graphic-Design---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , "تصميم بوستر سوشل ميديا"],
-        teacher:{
+        topics: 25,
+        image_url: "assets/photos/formation/Graphic-Design---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:1,
-        category:'graphic-design'
+        status: 1,
+        category: 'graphic-design'
     },
     {
-        title: "موشن جرافيك",
+        title: "دورة الموشن غرافيك و الأنيميشن - Animation & motion graphic ",
         price: "500",
         studentsNumber: 20,
         totalHours: 25,
-        topics:30,
-        image_url:"assets/photos/formation/Motion-Design---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , "تصميم بوستر سوشل ميديا"],
-        teacher:{
+        topics: 30,
+        image_url: "assets/photos/formation/Motion-Design---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:1,
-        category:'graphic-design'
+        status: 1,
+        category: 'graphic-design'
     },
     {
-        title: "التصوير السينمائي الفوتوغرافي و تحرير الفيديو",
+        title: "  دورة التصوير و المونتاج الشاملة - Photo & video et montage ",
         price: "550",
         studentsNumber: 20,
         totalHours: 40,
-        topics:30,
-        image_url:"assets/photos/formation/Photo-Video---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , "تصميم بوستر سوشل ميديا"],
-        teacher:{
+        topics: 30,
+        image_url: "assets/photos/formation/Photo-Video---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:1,
-        category:'photo-video-montage'
+        status: 1,
+        category: 'photo-video-montage'
     },
     {
-        title: "تطوير المواقع",
+        title: "  دورة تصميم المواقع و تطويرها - Web Design & development ",
         price: "300",
         studentsNumber: 30,
         totalHours: 40,
-        topics:20,
-        image_url:"assets/photos/formation/Web-dev---Sub-Thumb.png",
-        chapters:["مقدمة حول الدورة" , "التعريف بدور البرنامج واستعمالاته وتخصصاته" , "شرح واجهة البرنامج والأدوات تمرين / اختبار" , "تصميم بوستر سوشل ميديا"],
-        teacher:{
+        topics: 20,
+        image_url: "assets/photos/formation/Web-dev---Sub-Thumb.png",
+        chapters: ["مقدمة حول الدورة", "التعريف بدور البرنامج واستعمالاته وتخصصاته", "شرح واجهة البرنامج والأدوات تمرين / اختبار", "تصميم بوستر سوشل ميديا"],
+        teacher: {
             fullname: "احمد احمد",
             descreption: "احمد مدرب خبير بمجال تصميم الغرافيك حاصل على دبلوم من مدرسة الفنون الجميلة قام بتصميم أزيد من 320 تصميم و 20 مشروع"
         },
         // 0 means soon & 1 means new
-        status:0,
-        category:'web-dev'
+        status: 0,
+        category: 'web-dev'
     },
 ]
 
@@ -104,8 +104,9 @@ let courses = [
 
 // settin up courses
 buildCoursesSection(courses)
-function buildCoursesSection(data){
-    var coursesContainer =  document.querySelector('.courses');
+
+function buildCoursesSection(data) {
+    var coursesContainer = document.querySelector('.courses');
     for (let index = 0; index < data.length; index++) {
         const element = data[index];
         var courseItem = `
@@ -152,7 +153,7 @@ function buildCoursesSection(data){
 function singleCourseDetailBuild(singleCourse) {
     document.querySelector('.single-course-title').innerHTML = singleCourse.title;
     document.querySelector('.single-course-price').innerHTML = singleCourse.price + '<span>د.م</span>';
-    document.querySelector('.single-course-img').setAttribute('src',singleCourse.image_url);
+    document.querySelector('.single-course-img').setAttribute('src', singleCourse.image_url);
     document.querySelector('.single-course-students').innerHTML = singleCourse.studentsNumber;
     document.querySelector('.single-course-topics').innerHTML = singleCourse.topics;
     document.querySelector('.single-course-hours').innerHTML = singleCourse.totalHours;
@@ -166,9 +167,9 @@ function singleCourseDetailBuild(singleCourse) {
     }
 }
 
-function subscriptionBuild(singleCourse , index) {
+function subscriptionBuild(singleCourse, index) {
     document.querySelector('.course-subscription-top-bar-title').innerHTML = singleCourse.title;
-    document.querySelector('.course-subscription-top-bar-thumbnail-img').setAttribute('src' , singleCourse.image_url);
+    document.querySelector('.course-subscription-top-bar-thumbnail-img').setAttribute('src', singleCourse.image_url);
     document.querySelector('.form-control').value = index;
 }
 
@@ -176,55 +177,55 @@ function subscriptionBuild(singleCourse , index) {
 // home page course detail popup
 var btnCourseDeatils = document.querySelectorAll('.course-cta-more-details')
 var popupCourseDeatils = document.querySelector('.course-detail-popup-container')
-btnCourseDeatils.forEach((item,index)=>{
-  item.addEventListener("click",()=>{
-    popupCourseDeatils.classList.add('show')
-    singleCourseDetailBuild(courses[index])
-    subscriptionBuild(courses[index] , index)
-  })
+btnCourseDeatils.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        popupCourseDeatils.classList.add('show')
+        singleCourseDetailBuild(courses[index])
+        subscriptionBuild(courses[index], index)
+    })
 })
-popupCourseDeatils.addEventListener('mouseup',(e)=>{
-  if(e.target == popupCourseDeatils){
-    popupCourseDeatils.classList.remove('show')
-  }
+popupCourseDeatils.addEventListener('mouseup', (e) => {
+    if (e.target == popupCourseDeatils) {
+        popupCourseDeatils.classList.remove('show')
+    }
 })
 
 // home page course detail popup
 var btnSubscription = document.querySelectorAll('.course-cta-subsription')
 var popupSubscription = document.querySelector('.course-subscription-popup-container')
 var btnSubscription2 = document.querySelector('.single-course-subscribe-btn')
-btnSubscription.forEach((item,index)=>{
-  item.addEventListener("click",()=>{
+btnSubscription.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        popupSubscription.classList.add('show')
+        subscriptionBuild(courses[index], index)
+    })
+})
+btnSubscription2.addEventListener('click', () => {
     popupSubscription.classList.add('show')
-    subscriptionBuild(courses[index] , index)
-  })
 })
-btnSubscription2.addEventListener('click' , () => {
-  popupSubscription.classList.add('show')
-})
-popupSubscription.addEventListener('mouseup',(e)=>{
-  if(e.target == popupSubscription){
-    popupSubscription.classList.remove('show')
-  }
+popupSubscription.addEventListener('mouseup', (e) => {
+    if (e.target == popupSubscription) {
+        popupSubscription.classList.remove('show')
+    }
 })
 
 
 // wtsp order msg
 let orderBtn = document.querySelector('.course-subscription-btn');
-orderBtn.addEventListener('click' , () =>{
+orderBtn.addEventListener('click', () => {
     let msg = `${ document.querySelector('.course-subscription-top-bar-title').textContent}`
     let url = `https://wa.me/212624441384?text=Check out this value: ${msg}`
-    window.open(url,'_blank');
+    window.open(url, '_blank');
 })
 
 // courses filter
-$('.courses-filter-item').click(function(){
+$('.courses-filter-item').click(function() {
     //active filter
     $(this).addClass('active-filter').siblings().removeClass('active-filter');
     const currentFilter = $(this).attr('data-filter');
     if (currentFilter == 'all') {
         $('.course-item').show('200')
-    }else{
+    } else {
         $('.course-item').not(`.${currentFilter}`).hide('200')
         $('.course-item').filter(`.${currentFilter}`).show('200')
     }
