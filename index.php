@@ -27,6 +27,9 @@
 
 <!-- hero -->
 <div class="top-hearo-container">
+    
+    
+    <div style="width: 100%; display: flex; height: 100vh; direction: rtl; ">
     <div class="hero-text-container">
         <div class="hero-text">
             <svg width="308" height="40" viewBox="0 0 308 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,30 +64,35 @@
             
         </div>
     </div>
-    <div class="hero-canva">
-        <div class="hero-image">
-            <img src="../Elmas_academy_template/assets/photos/hero_picture/Man 2.png" height="100%">
-        </div>
-        <div class="background-shape">
-            <svg class="svg-group" width="596" height="884" viewBox="0 0 596 884" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M274.741 527.907C277.56 518.772 284.488 513.116 290.216 515.284C295.944 517.453 298.308 526.611 295.488 535.746C292.669 544.881 285.741 550.537 280.013 548.369C274.286 546.2 271.921 537.041 274.741 527.907Z" fill="#FFCF66"/>
-                <path d="M211.14 313.605L197.58 13" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M348.811 797.781L338.844 576.676" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M263.078 358.468L249.519 57.8632" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M397.482 871.055L383.922 570.45" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
-                </svg>                
-            <svg width="861" height="970" viewBox="0 0 861 970" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M715.602 950.699C768.076 923.101 817.147 851.375 839.769 784.006C851.518 749.05 879.975 664.287 841.026 594.084C802.657 524.976 739.129 542.393 681.636 472.556C626.889 406.042 652.834 351.771 624.089 263.782C581.146 132.33 438.721 -5.34952 300.202 1.05206C144.975 8.21383 14.681 195.416 1.61399 355.701C-27.6368 714.633 521.683 1052.7 715.602 950.699Z" fill="#FFCF66"/>
-                </svg>                               
+        <div class="hero-canva">
+            <div class="hero-image">
+                <img src="../Elmas_academy_template/assets/photos/hero_picture/Man 2.png" height="100%">
+            </div>
+            <div class="background-shape">
+                <svg class="svg-group" width="596" height="884" viewBox="0 0 596 884" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M274.741 527.907C277.56 518.772 284.488 513.116 290.216 515.284C295.944 517.453 298.308 526.611 295.488 535.746C292.669 544.881 285.741 550.537 280.013 548.369C274.286 546.2 271.921 537.041 274.741 527.907Z" fill="#FFCF66"/>
+                    <path d="M211.14 313.605L197.58 13" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M348.811 797.781L338.844 576.676" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M263.078 358.468L249.519 57.8632" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M397.482 871.055L383.922 570.45" stroke="#FFCF66" stroke-width="25" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>                
+                <svg width="861" height="970" viewBox="0 0 861 970" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M715.602 950.699C768.076 923.101 817.147 851.375 839.769 784.006C851.518 749.05 879.975 664.287 841.026 594.084C802.657 524.976 739.129 542.393 681.636 472.556C626.889 406.042 652.834 351.771 624.089 263.782C581.146 132.33 438.721 -5.34952 300.202 1.05206C144.975 8.21383 14.681 195.416 1.61399 355.701C-27.6368 714.633 521.683 1052.7 715.602 950.699Z" fill="#FFCF66"/>
+                    </svg>                               
+            </div>
         </div>
     </div>
 
+
+    <div class="wlidatech-container" style="width 100%; height:100vh;">
+    <img src="assets/photos/hero_picture/WlidatTech-slider.png"  width="100%" height="100%">
+    </div>
     <!-- mouse scroll -->
-    <div class="mouse-scroll-container">
+    <!-- <div class="mouse-scroll-container">
         <div class="mouse-scroll-icon">
             <div></div>
         </div>
-    </div>
+    </div> -->
     <!-- end ofmouse scroll -->
 </div>
 <!-- end of hero -->

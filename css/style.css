@@ -1806,6 +1806,10 @@ footer .copywrite-footer {
         margin: 0 auto;
         padding: 0;
     }
+
+    .wlidatech-container img{
+        object-fit: contain;
+    }
 }
 
 @media screen and (max-width:640px) {

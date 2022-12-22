@@ -33,6 +33,17 @@ $(document).ready(function() {
     });
 
 
+    // top-hearo-container slider
+    $('.top-hearo-container').slick({
+        centerMode: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        rtl: true,
+        dots: false,
+        arrows: false,
+        prevArrow: ".prev-button-review",
+        nextArrow: ".next-button-review",
+    })
     // reviews caroussel
     $('.student-reviews-slider').slick({
         centerMode: true,
