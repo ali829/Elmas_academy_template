@@ -24,9 +24,21 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'alielyassraoui@gmail.com';
-    $mail->Password = 'ixkcdtklnjclrbcj';
+    $mail->Password = 'oyvcobjsjyniiuuy';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;
+
+
+    // fixing error of smtp
+
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+        )
+    );
+
 
 
     //Recipients

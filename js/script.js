@@ -78,7 +78,6 @@ $(document).ready(function() {
     $('.newsletter-form').submit(function(e) {
         e.preventDefault();
         var email = $('#newsletter-email');
-        console.log('iohdzihdzdhzo');
 
         $.ajax({
             url: 'news-letter.php',
@@ -89,6 +88,7 @@ $(document).ready(function() {
             success: function(data) {
                 alert('شكرا على اهتمامكم')
                 $('.newsletter-form')[0].reset();
+                console.log(data)
             }
         })
     });
