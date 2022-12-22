@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "Cairo";
-    src: url(../Elmas_academy_template/assets/font/cairo.ttf)
+    src: url(../../Elmas_academy_template/assets/font/cairo.ttf)
 }
 
 body {
@@ -1616,19 +1616,19 @@ footer .copywrite-footer {
     }
     /* =====================top hero======================= */
     .top-hearo-container {
-        display: flex;
-        flex-direction: column-reverse;
+        display: block;
     }
     .hero-canva {
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
+        /* width: 100% !important; */
+        /* display: flex; */
+        /* justify-content: center; */
+        display: none;
     }
     .top-hearo-container .hero-canva .hero-image {
         left: 20%;
     }
     .hero-text-container {
-        width: 100%;
+        width: 100% !important;
         display: flex;
         justify-content: center;
     }
