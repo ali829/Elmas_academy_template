@@ -214,11 +214,11 @@ popupSubscription.addEventListener('mouseup', (e) => {
 let orderBtn = document.querySelector('.course-subscription-btn');
 orderBtn.addEventListener('click', () => {
     let msg = `${ document.querySelector('.course-subscription-top-bar-title').textContent}`
-    let url = `https://wa.me/212624441384?text=Check out this value: ${msg}`
+    let url = `https://wa.me/212624441384?text=Bonjour, svp je souhaite m'inscrire sous le nom.... l'e-mail... à la formation${msg} Et j’aimerais avoir plus de détails concernant la durée de formation`
     window.open(url, '_blank');
 })
 
-// courses filter
+// courses filter           
 $('.courses-filter-item').click(function() {
     //active filter
     $(this).addClass('active-filter').siblings().removeClass('active-filter');
