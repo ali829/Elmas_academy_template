@@ -58,9 +58,6 @@
                 <li><i class="fi fi-brands-linkedin"></i></li>
             </a>
             <a href="#">
-                <li><i class="fi fi-brands-twitter"></i></li>
-            </a>
-            <a href="#">
                 <li><i class="fi fi-brands-facebook"></i></li>
             </a>
             <a href="#">
@@ -92,9 +89,6 @@
             </a>
             <a href="#">
                 <li><i class="fi fi-brands-linkedin"></i></li>
-            </a>
-            <a href="#">
-                <li><i class="fi fi-brands-twitter"></i></li>
             </a>
             <a href="#">
                 <li><i class="fi fi-brands-facebook"></i></li>

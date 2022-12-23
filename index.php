@@ -143,9 +143,7 @@
         <div class="courses" data-aos="fade-up">
 
         </div>
-        <div class="all-courses-button">
-            <button>جميع الدورات</button>
-        </div>
+       s -->
     </div>
     <div class="course-detail-popup-container">
         <div class="single-course-details-container">
@@ -208,7 +206,7 @@
             <form action="">
                 <div class="course-subscription-form-item">
                     <label for="">الإسم:</label>
-                    <input type="text">
+                    <input type="text" id="clientName">
                 </div>
                 <!-- <div class="course-subscription-form-item">
                     <label for="">الدورة:</label>
@@ -235,14 +233,16 @@
 
 <!-- wlidatech section -->
 <div class="wlidatech-container">
-    <div class="wlidatech-baner">
-        <div class="wlidatech-baner-text">
-            <h3>طور قدرات طفلك الذهنية عن طريق الإشتراك في أوراش <span>wlidatech</span></h3>
-            <p>برمجة الروبوتات <span>-</span> التصوير و المونتاج  <span>-</span> التصميم الجرافيكي <span>-</span> الإعلاميات</p>
-        </div>
-        <div class="wlidatech-baner-cta">
-            <button>إشترك الأن</button>
-        </div>
+    <div class="wlidatech-log" data-aos="fade-left">
+        <img src="assets/photos/wlidatech/wlidatech.png" alt="">
+        <img src="assets/photos/wlidatech/WlidatTech-slider-2-1.png" alt="">
+    </div>
+    <div class="wlidatech-text" data-aos="fade-up">
+        <img src="assets/photos/wlidatech/Wlidatech-slider-2-2.png" alt="">
+        <button>إشترك الآن</button>
+    </div>
+    <div class="wlidatech-canva" data-aos="fade-right">
+    <img src="assets/photos/wlidatech/WlidatTech-slider-1-1.png" alt="">
     </div>
 </div>
 <!-- wlidatech section -->

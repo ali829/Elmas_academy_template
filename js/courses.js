@@ -210,11 +210,12 @@ popupSubscription.addEventListener('mouseup', (e) => {
 })
 
 
-// wtsp order msg
+//  sp order msg
 let orderBtn = document.querySelector('.course-subscription-btn');
 orderBtn.addEventListener('click', () => {
-    let msg = `${ document.querySelector('.course-subscription-top-bar-title').textContent}`
-    let url = `https://wa.me/212624441384?text=Bonjour, svp je souhaite m'inscrire sous le nom.... l'e-mail... à la formation${msg} Et j’aimerais avoir plus de détails concernant la durée de formation`
+    let clientName = `${document.querySelector('#clientName').value}`
+    let courseTitle = `${ document.querySelector('.course-subscription-top-bar-title').textContent}`
+    let url = `https://wa.me/212663200090?text=Bonjour, svp je souhaite m'inscrire sous le nom ${clientName}  à la formation : ${courseTitle} Et j’aimerais avoir plus de détails concernant la durée de formation`
     window.open(url, '_blank');
 })
 

@@ -46,9 +46,6 @@
         <div class="courses" data-aos="fade-up">
 
         </div>
-        <div class="all-courses-button">
-            <button>جميع الدورات</button>
-        </div>
     </div>
     <div class="course-detail-popup-container">
         <div class="single-course-details-container">
@@ -111,7 +108,7 @@
             <form action="">
                 <div class="course-subscription-form-item">
                     <label for="">الإسم:</label>
-                    <input type="text">
+                    <input type="text" id="clientName">
                 </div>
                 <!-- <div class="course-subscription-form-item">
                     <label for="">الدورة:</label>

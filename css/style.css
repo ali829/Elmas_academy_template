@@ -892,83 +892,75 @@ button.course-cta-more-details:hover {
 /* =====================wlidatech section======================= */
 .wlidatech-container{
     width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    padding: 10px 0;
-}
-.wlidatech-container .wlidatech-baner{
-    width: 50%;
-    position: relative;
-    border-radius: 20px;
-    padding: 10px 20px;
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    background-color: #020D2B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    direction: rtl;
-}
-
-.wlidatech-container .wlidatech-baner::before{
-    content: '';
-    position: absolute;
-    background-image: url(../../Elmas_academy_template/assets/wlidatech.png);
-    top: 0;
-    left: 2%;
-    height: 100px;
-    width: 100px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.wlidatech-baner-text {
-    width: 60%;
-}
-.wlidatech-baner-text h3 {
-    width: fit-content;
-    margin: 0;
-    color: var(--yellow-);
-    letter-spacing: 1px; 
-}
-
-.wlidatech-baner-text p {
-    color: #ffffff;
-    width: 100%;
+    height: 550px;
     display: flex;
     justify-content: space-between;
+    margin: 100px 0;
+    background-color: var(--dark-blue-);
+    direction: rtl;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    position: relative;
 }
 
-.wlidatech-container .wlidatech-baner .wlidatech-baner-cta {
-    width: 20%;
+.wlidatech-container .wlidatech-log{
+    width: 25%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
 }
-.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button{
+.wlidatech-container .wlidatech-log img{
+    width: 90%;
+}
+.wlidatech-container .wlidatech-text{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wlidatech-container .wlidatech-canva{
+    width: 50%;
+    height: 100%;
+}
+.wlidatech-container .wlidatech-canva img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.wlidatech-text button{
     font-family: 'Cairo';
     font-style: normal;
     padding: 5px 30px;
     border: 0;
     border-radius: 4px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
-    color: #ffffff;
-    background-color: var(--blue-);
+    color: var(--dark-blue-);
+    background-color: var(--yellow-);
     cursor: pointer;
     transition: var(--global-transition);
     position: relative;
     z-index: 11;
-    
+    font-size: 16px;
+    font-weight: 600;
 }
-.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button::before{
+.wlwlidatech-text button::before{
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: var(--blue-);
+    background-color: var(--yellow-);
     border-radius: 4px;
     top: 0;
     right: 0;
@@ -978,7 +970,7 @@ button.course-cta-more-details:hover {
     animation: ripple-3 2s infinite ease-in-out;
  
 }
-.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button:hover{
+.wlidatech-text button:hover{
     opacity: 0.8;
 }
 
@@ -987,7 +979,7 @@ button.course-cta-more-details:hover {
 .video-section-container {
     width: 100%;
     height: 425px;
-    background-color: var(--dark-blue-);
+    background-color: var(--blue-);
     display: flex;
     justify-content: center;
     margin-bottom: 300px;
@@ -1798,19 +1790,21 @@ footer .copywrite-footer {
         width: 80%;
     }
     /* =====================wlidatech section======================= */
-    .wlidatech-container .wlidatech-baner {
-        width: 80%;
+
+    .wlidatech-container {
         flex-direction: column;
-        text-align: center;
+        height: fit-content;
+        padding-top: 20px;
     }
-    .wlidatech-baner-text {
-        width: 100%;
-        margin-top: 15%;
-    }
-    .wlidatech-container .wlidatech-baner .wlidatech-baner-cta {
+    .wlidatech-container .wlidatech-log {
         width: 100%;
     }
-    
+    .wlidatech-container .wlidatech-text {
+        width: 100%;
+    }
+    .wlidatech-container .wlidatech-canva {
+        width: 100%;
+    }
     /* =====================video section======================= */
     .video-section-container .video-section-thumbnail {
         width: 100%;
