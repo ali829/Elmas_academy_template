@@ -888,6 +888,100 @@ button.course-cta-more-details:hover {
 }
 
 
+
+/* =====================wlidatech section======================= */
+.wlidatech-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 10px 0;
+}
+.wlidatech-container .wlidatech-baner{
+    width: 50%;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background-color: #020D2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.wlidatech-container .wlidatech-baner::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../Elmas_academy_template/assets/wlidatech.png);
+    top: 0;
+    left: 2%;
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wlidatech-baner-text {
+    width: 60%;
+}
+.wlidatech-baner-text h3 {
+    width: fit-content;
+    margin: 0;
+    color: var(--yellow-);
+    letter-spacing: 1px; 
+}
+
+.wlidatech-baner-text p {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wlidatech-container .wlidatech-baner .wlidatech-baner-cta {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button{
+    font-family: 'Cairo';
+    font-style: normal;
+    padding: 5px 30px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+    color: #ffffff;
+    background-color: var(--blue-);
+    cursor: pointer;
+    transition: var(--global-transition);
+    position: relative;
+    z-index: 11;
+    
+}
+.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-);
+    border-radius: 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    animation: ripple-3 2s infinite ease-in-out;
+ 
+}
+.wlidatech-container .wlidatech-baner .wlidatech-baner-cta button:hover{
+    opacity: 0.8;
+}
+
 /* =====================video section======================= */
 
 .video-section-container {
@@ -1703,6 +1797,20 @@ footer .copywrite-footer {
     .courses-container .course-subscription-content {
         width: 80%;
     }
+    /* =====================wlidatech section======================= */
+    .wlidatech-container .wlidatech-baner {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .wlidatech-baner-text {
+        width: 100%;
+        margin-top: 15%;
+    }
+    .wlidatech-container .wlidatech-baner .wlidatech-baner-cta {
+        width: 100%;
+    }
+    
     /* =====================video section======================= */
     .video-section-container .video-section-thumbnail {
         width: 100%;
@@ -1862,6 +1970,16 @@ footer .copywrite-footer {
     }
     100% {
         transform: translate(50%, -50%) scale(1.7);
+        opacity: 0;
+    }
+}
+@keyframes ripple-3 {
+    0% {
+        transform:  scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
         opacity: 0;
     }
 }

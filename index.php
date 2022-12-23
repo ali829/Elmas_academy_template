@@ -27,9 +27,6 @@
 
 <!-- hero -->
 <div class="top-hearo-container">
-    
-    
-    <div style="width: 100%; display: flex; height: 100vh; direction: rtl; ">
     <div class="hero-text-container">
         <div class="hero-text">
             <svg width="308" height="40" viewBox="0 0 308 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +61,7 @@
             
         </div>
     </div>
-        <div class="hero-canva">
+    <div class="hero-canva">
             <div class="hero-image">
                 <img src="../Elmas_academy_template/assets/photos/hero_picture/Man 2.png" height="100%">
             </div>
@@ -80,19 +77,15 @@
                     <path d="M715.602 950.699C768.076 923.101 817.147 851.375 839.769 784.006C851.518 749.05 879.975 664.287 841.026 594.084C802.657 524.976 739.129 542.393 681.636 472.556C626.889 406.042 652.834 351.771 624.089 263.782C581.146 132.33 438.721 -5.34952 300.202 1.05206C144.975 8.21383 14.681 195.416 1.61399 355.701C-27.6368 714.633 521.683 1052.7 715.602 950.699Z" fill="#FFCF66"/>
                     </svg>                               
             </div>
-        </div>
     </div>
 
 
-    <div class="wlidatech-container" style="width 100%; height:100vh;">
-    <img src="assets/photos/hero_picture/WlidatTech-slider.png"  width="100%" height="100%">
-    </div>
     <!-- mouse scroll -->
-    <!-- <div class="mouse-scroll-container">
+    <div class="mouse-scroll-container">
         <div class="mouse-scroll-icon">
             <div></div>
         </div>
-    </div> -->
+    </div>
     <!-- end ofmouse scroll -->
 </div>
 <!-- end of hero -->
@@ -236,6 +229,25 @@
     </div>
 </div>
 <!-- end of courses  -->
+
+
+
+
+<!-- wlidatech section -->
+<div class="wlidatech-container">
+    <div class="wlidatech-baner">
+        <div class="wlidatech-baner-text">
+            <h3>طور قدرات طفلك الذهنية عن طريق الإشتراك في أوراش <span>wlidatech</span></h3>
+            <p>برمجة الروبوتات <span>-</span> التصوير و المونتاج  <span>-</span> التصميم الجرافيكي <span>-</span> الإعلاميات</p>
+        </div>
+        <div class="wlidatech-baner-cta">
+            <button>إشترك الأن</button>
+        </div>
+    </div>
+</div>
+<!-- wlidatech section -->
+
+
 
 
 <!-- video section -->
