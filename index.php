@@ -273,7 +273,7 @@
 <!-- why elmas media -->
 <div class="why-elmas-container">
     <div class="why-elmas-content">
-        <div class="why-elmas-info" data-aos="fade-left">
+        <div class="why-elmas-info" data-aos="fade-up">
             <h3>لماذا Elmas Academy ؟</h3>
             <p>دورات من طرف مختصين في المجال، مع استراتيجية تعليم ذكية.</p>
             <div class="elmas-numbers-container">
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </div>
-        <div class="why-elmas-canva" data-aos="fade-right">
+        <div class="why-elmas-canva" data-aos="fade-up">
             <img src="assets/photos/Frame.png" alt="">
         </div>
     </div>
